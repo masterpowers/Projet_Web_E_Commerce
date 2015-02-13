@@ -1,0 +1,1640 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'grunt-cli' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'grunt-cli', null ]
+5 verbose cache add name=undefined spec="grunt-cli" args=["grunt-cli",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'grunt-cli',
+6 verbose parsed url   path: 'grunt-cli',
+6 verbose parsed url   href: 'grunt-cli' }
+7 silly lockFile 671ef8ac-grunt-cli grunt-cli
+8 verbose lock grunt-cli /home/duhame_j/.npm/671ef8ac-grunt-cli.lock
+9 silly lockFile 671ef8ac-grunt-cli grunt-cli
+10 silly lockFile 671ef8ac-grunt-cli grunt-cli
+11 verbose addNamed [ 'grunt-cli', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+14 verbose lock grunt-cli@ /home/duhame_j/.npm/d63f3d0b-grunt-cli.lock
+15 silly addNameRange { name: 'grunt-cli', range: '*', hasData: false }
+16 verbose url raw grunt-cli
+17 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cli' ]
+18 verbose url resolved https://registry.npmjs.org/grunt-cli
+19 info trying registry request attempt 1 at 14:07:45
+20 verbose etag "6K6VZSDEG6YSFJ4DJW2IHT139"
+21 http GET https://registry.npmjs.org/grunt-cli
+22 http 304 https://registry.npmjs.org/grunt-cli
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Fri, 31 Oct 2014 13:07:51 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Fri, 31 Oct 2014 13:07:51 GMT',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     etag: '"6K6VZSDEG6YSFJ4DJW2IHT139"',
+23 silly registry.get     age: '43',
+23 silly registry.get     'x-served-by': 'cache-fra1243-FRA',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1414760871.427354,VS0,VE0',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'content-length': '0',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 verbose etag grunt-cli from cache
+25 silly addNameRange number 2 { name: 'grunt-cli', range: '*', hasData: true }
+26 silly addNameRange versions [ 'grunt-cli',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.1.2',
+26 silly addNameRange     '0.1.3',
+26 silly addNameRange     '0.1.4',
+26 silly addNameRange     '0.1.5',
+26 silly addNameRange     '0.1.6',
+26 silly addNameRange     '0.1.7',
+26 silly addNameRange     '0.1.8',
+26 silly addNameRange     '0.1.9',
+26 silly addNameRange     '0.1.10',
+26 silly addNameRange     '0.1.11',
+26 silly addNameRange     '0.1.12',
+26 silly addNameRange     '0.1.13' ] ]
+27 verbose addNamed [ 'grunt-cli', '0.1.13' ]
+28 verbose addNamed [ '0.1.13', '0.1.13' ]
+29 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+30 verbose lock grunt-cli@0.1.13 /home/duhame_j/.npm/28997503-grunt-cli-0-1-13.lock
+31 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+32 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
+33 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+34 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+35 silly resolved [ { name: 'grunt-cli',
+35 silly resolved     description: 'The grunt command line interface.',
+35 silly resolved     version: '0.1.13',
+35 silly resolved     author: { name: 'Grunt Team' },
+35 silly resolved     homepage: 'http://gruntjs.com/',
+35 silly resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt-cli.git' },
+35 silly resolved     bugs: { url: 'http://github.com/gruntjs/grunt-cli/issues' },
+35 silly resolved     licenses: [ [Object] ],
+35 silly resolved     bin: { grunt: 'bin/grunt' },
+35 silly resolved     engines: { node: '>= 0.8.0' },
+35 silly resolved     scripts: { test: 'node bin/grunt test' },
+35 silly resolved     preferGlobal: true,
+35 silly resolved     dependencies: { nopt: '~1.0.10', 'findup-sync': '~0.1.0', resolve: '~0.3.1' },
+35 silly resolved     devDependencies: { grunt: '~0.4.0', 'grunt-contrib-jshint': '~0.2.0' },
+35 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+35 silly resolved     readme: '# grunt-cli [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-cli.png?branch=master)](http://travis-ci.org/gruntjs/grunt-cli)\n> The Grunt command line interface.\n\nInstall this globally and you\'ll have access to the `grunt` command anywhere on your system.\n\n```shell\nnpm install -g grunt-cli\n```\n\n**Note:** The job of the `grunt` command is to load and run the version of Grunt you have installed locally to your project, irrespective of its version.  Starting with Grunt v0.4, you should never install Grunt itself globally.  For more information about why, [please read this](http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation).\n\nSee the [Getting Started](http://gruntjs.com/getting-started) guide for more information.\n\n## Shell tab auto-completion\nTo enable tab auto-completion for Grunt, add one of the following lines to your `~/.bashrc` or `~/.zshrc` file.\n\n```bash\n# Bash, ~/.bashrc\neval "$(grunt --completion=bash)"\n```\n\n```bash\n# Zsh, ~/.zshrc\neval "$(grunt --completion=zsh)"\n```\n\n## Installing grunt-cli locally\nIf you prefer the idiomatic Node.js method to get started with a project (`npm install && npm test`) then install grunt-cli locally with `npm install grunt-cli --save-dev`. Then add a script to your `package.json` to run the associated grunt command: `"scripts": { "test": "grunt test" } `. Now `npm test` will use the locally installed `./node_modules/.bin/grunt` executable to run your Grunt commands.\n\nTo read more about npm scripts, please visit the npm docs: [https://npmjs.org/doc/misc/npm-scripts.html](https://npmjs.org/doc/misc/npm-scripts.html).\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     _id: 'grunt-cli@0.1.13',
+35 silly resolved     _from: 'grunt-cli@' } ]
+36 info install grunt-cli@0.1.13 into /home/duhame_j/npm/lib
+37 info installOne grunt-cli@0.1.13
+38 info /home/duhame_j/npm/lib/node_modules/grunt-cli unbuild
+39 info preuninstall grunt-cli@0.1.13
+40 info uninstall grunt-cli@0.1.13
+41 verbose true,/home/duhame_j/npm/lib/node_modules,/home/duhame_j/npm/lib/node_modules unbuild grunt-cli@0.1.13
+42 verbose /home/duhame_j/npm/bin,[object Object] binRoot
+43 info postuninstall grunt-cli@0.1.13
+44 verbose tar unpack /home/duhame_j/.npm/grunt-cli/0.1.13/package.tgz
+45 silly lockFile ec2bc72e-j-npm-lib-node-modules-grunt-cli tar:///home/duhame_j/npm/lib/node_modules/grunt-cli
+46 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli /home/duhame_j/.npm/ec2bc72e-j-npm-lib-node-modules-grunt-cli.lock
+47 silly lockFile 023c9865-npm-grunt-cli-0-1-13-package-tgz tar:///home/duhame_j/.npm/grunt-cli/0.1.13/package.tgz
+48 verbose lock tar:///home/duhame_j/.npm/grunt-cli/0.1.13/package.tgz /home/duhame_j/.npm/023c9865-npm-grunt-cli-0-1-13-package-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 silly gunzTarPerm extractEntry package.json
+51 silly gunzTarPerm extractEntry .npmignore
+52 silly gunzTarPerm extractEntry README.md
+53 silly gunzTarPerm extractEntry Gruntfile.js
+54 silly gunzTarPerm extractEntry .travis.yml
+55 silly gunzTarPerm extractEntry AUTHORS
+56 silly gunzTarPerm extractEntry LICENSE-MIT
+57 silly gunzTarPerm extractEntry bin/grunt
+58 silly gunzTarPerm extractEntry completion/bash
+59 silly gunzTarPerm extractEntry completion/zsh
+60 silly gunzTarPerm extractEntry lib/cli.js
+61 silly gunzTarPerm extractEntry lib/completion.js
+62 silly gunzTarPerm extractEntry lib/info.js
+63 silly lockFile ec2bc72e-j-npm-lib-node-modules-grunt-cli tar:///home/duhame_j/npm/lib/node_modules/grunt-cli
+64 silly lockFile ec2bc72e-j-npm-lib-node-modules-grunt-cli tar:///home/duhame_j/npm/lib/node_modules/grunt-cli
+65 silly lockFile 023c9865-npm-grunt-cli-0-1-13-package-tgz tar:///home/duhame_j/.npm/grunt-cli/0.1.13/package.tgz
+66 silly lockFile 023c9865-npm-grunt-cli-0-1-13-package-tgz tar:///home/duhame_j/.npm/grunt-cli/0.1.13/package.tgz
+67 info preinstall grunt-cli@0.1.13
+68 verbose readDependencies using package.json deps
+69 verbose readDependencies using package.json deps
+70 verbose cache add [ 'nopt@~1.0.10', null ]
+71 verbose cache add name=undefined spec="nopt@~1.0.10" args=["nopt@~1.0.10",null]
+72 verbose parsed url { protocol: null,
+72 verbose parsed url   slashes: null,
+72 verbose parsed url   auth: null,
+72 verbose parsed url   host: null,
+72 verbose parsed url   port: null,
+72 verbose parsed url   hostname: null,
+72 verbose parsed url   hash: null,
+72 verbose parsed url   search: null,
+72 verbose parsed url   query: null,
+72 verbose parsed url   pathname: 'nopt@~1.0.10',
+72 verbose parsed url   path: 'nopt@~1.0.10',
+72 verbose parsed url   href: 'nopt@~1.0.10' }
+73 verbose cache add name="nopt" spec="~1.0.10" args=["nopt","~1.0.10"]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: '~1.0.10',
+74 verbose parsed url   path: '~1.0.10',
+74 verbose parsed url   href: '~1.0.10' }
+75 verbose addNamed [ 'nopt', '~1.0.10' ]
+76 verbose addNamed [ null, '>=1.0.10-0 <1.1.0-0' ]
+77 silly lockFile 79f78dba-nopt-1-0-10 nopt@~1.0.10
+78 verbose lock nopt@~1.0.10 /home/duhame_j/.npm/79f78dba-nopt-1-0-10.lock
+79 verbose cache add [ 'findup-sync@~0.1.0', null ]
+80 verbose cache add name=undefined spec="findup-sync@~0.1.0" args=["findup-sync@~0.1.0",null]
+81 verbose parsed url { protocol: null,
+81 verbose parsed url   slashes: null,
+81 verbose parsed url   auth: null,
+81 verbose parsed url   host: null,
+81 verbose parsed url   port: null,
+81 verbose parsed url   hostname: null,
+81 verbose parsed url   hash: null,
+81 verbose parsed url   search: null,
+81 verbose parsed url   query: null,
+81 verbose parsed url   pathname: 'findup-sync@~0.1.0',
+81 verbose parsed url   path: 'findup-sync@~0.1.0',
+81 verbose parsed url   href: 'findup-sync@~0.1.0' }
+82 verbose cache add name="findup-sync" spec="~0.1.0" args=["findup-sync","~0.1.0"]
+83 verbose parsed url { protocol: null,
+83 verbose parsed url   slashes: null,
+83 verbose parsed url   auth: null,
+83 verbose parsed url   host: null,
+83 verbose parsed url   port: null,
+83 verbose parsed url   hostname: null,
+83 verbose parsed url   hash: null,
+83 verbose parsed url   search: null,
+83 verbose parsed url   query: null,
+83 verbose parsed url   pathname: '~0.1.0',
+83 verbose parsed url   path: '~0.1.0',
+83 verbose parsed url   href: '~0.1.0' }
+84 verbose addNamed [ 'findup-sync', '~0.1.0' ]
+85 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+86 silly lockFile 625605b9-findup-sync-0-1-0 findup-sync@~0.1.0
+87 verbose lock findup-sync@~0.1.0 /home/duhame_j/.npm/625605b9-findup-sync-0-1-0.lock
+88 verbose cache add [ 'resolve@~0.3.1', null ]
+89 verbose cache add name=undefined spec="resolve@~0.3.1" args=["resolve@~0.3.1",null]
+90 verbose parsed url { protocol: null,
+90 verbose parsed url   slashes: null,
+90 verbose parsed url   auth: null,
+90 verbose parsed url   host: null,
+90 verbose parsed url   port: null,
+90 verbose parsed url   hostname: null,
+90 verbose parsed url   hash: null,
+90 verbose parsed url   search: null,
+90 verbose parsed url   query: null,
+90 verbose parsed url   pathname: 'resolve@~0.3.1',
+90 verbose parsed url   path: 'resolve@~0.3.1',
+90 verbose parsed url   href: 'resolve@~0.3.1' }
+91 verbose cache add name="resolve" spec="~0.3.1" args=["resolve","~0.3.1"]
+92 verbose parsed url { protocol: null,
+92 verbose parsed url   slashes: null,
+92 verbose parsed url   auth: null,
+92 verbose parsed url   host: null,
+92 verbose parsed url   port: null,
+92 verbose parsed url   hostname: null,
+92 verbose parsed url   hash: null,
+92 verbose parsed url   search: null,
+92 verbose parsed url   query: null,
+92 verbose parsed url   pathname: '~0.3.1',
+92 verbose parsed url   path: '~0.3.1',
+92 verbose parsed url   href: '~0.3.1' }
+93 verbose addNamed [ 'resolve', '~0.3.1' ]
+94 verbose addNamed [ null, '>=0.3.1-0 <0.4.0-0' ]
+95 silly lockFile 7958d065-resolve-0-3-1 resolve@~0.3.1
+96 verbose lock resolve@~0.3.1 /home/duhame_j/.npm/7958d065-resolve-0-3-1.lock
+97 silly addNameRange { name: 'nopt', range: '>=1.0.10-0 <1.1.0-0', hasData: false }
+98 silly addNameRange { name: 'findup-sync',
+98 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+98 silly addNameRange   hasData: false }
+99 silly addNameRange { name: 'resolve', range: '>=0.3.1-0 <0.4.0-0', hasData: false }
+100 verbose url raw nopt
+101 verbose url resolving [ 'https://registry.npmjs.org/', './nopt' ]
+102 verbose url resolved https://registry.npmjs.org/nopt
+103 info trying registry request attempt 1 at 14:07:54
+104 verbose etag "2GWKPD9CYD6ZLDZ9J2A2BHFGO"
+105 http GET https://registry.npmjs.org/nopt
+106 verbose url raw findup-sync
+107 verbose url resolving [ 'https://registry.npmjs.org/', './findup-sync' ]
+108 verbose url resolved https://registry.npmjs.org/findup-sync
+109 info trying registry request attempt 1 at 14:07:54
+110 verbose etag "4LEKH44R5GDQN14Q3HPISN3QW"
+111 http GET https://registry.npmjs.org/findup-sync
+112 verbose url raw resolve
+113 verbose url resolving [ 'https://registry.npmjs.org/', './resolve' ]
+114 verbose url resolved https://registry.npmjs.org/resolve
+115 info trying registry request attempt 1 at 14:07:54
+116 verbose etag "E8EO3VI6KDFATVHO865FSU1SZ"
+117 http GET https://registry.npmjs.org/resolve
+118 http 304 https://registry.npmjs.org/findup-sync
+119 silly registry.get cb [ 304,
+119 silly registry.get   { date: 'Fri, 31 Oct 2014 13:07:54 GMT',
+119 silly registry.get     server: 'Apache',
+119 silly registry.get     via: '1.1 varnish',
+119 silly registry.get     'last-modified': 'Fri, 31 Oct 2014 13:07:54 GMT',
+119 silly registry.get     'cache-control': 'max-age=60',
+119 silly registry.get     etag: '"4LEKH44R5GDQN14Q3HPISN3QW"',
+119 silly registry.get     age: '43',
+119 silly registry.get     'x-served-by': 'cache-lhr6326-LHR',
+119 silly registry.get     'x-cache': 'HIT',
+119 silly registry.get     'x-cache-hits': '1',
+119 silly registry.get     'x-timer': 'S1414760874.988141,VS0,VE0',
+119 silly registry.get     vary: 'Accept',
+119 silly registry.get     'content-length': '0',
+119 silly registry.get     'keep-alive': 'timeout=10, max=50',
+119 silly registry.get     connection: 'Keep-Alive' } ]
+120 verbose etag findup-sync from cache
+121 silly addNameRange number 2 { name: 'findup-sync',
+121 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+121 silly addNameRange   hasData: true }
+122 silly addNameRange versions [ 'findup-sync', [ '0.1.0', '0.1.1', '0.1.2', '0.1.3' ] ]
+123 verbose addNamed [ 'findup-sync', '0.1.3' ]
+124 verbose addNamed [ '0.1.3', '0.1.3' ]
+125 silly lockFile 7d59adfa-findup-sync-0-1-3 findup-sync@0.1.3
+126 verbose lock findup-sync@0.1.3 /home/duhame_j/.npm/7d59adfa-findup-sync-0-1-3.lock
+127 silly lockFile 7d59adfa-findup-sync-0-1-3 findup-sync@0.1.3
+128 silly lockFile 7d59adfa-findup-sync-0-1-3 findup-sync@0.1.3
+129 silly lockFile 625605b9-findup-sync-0-1-0 findup-sync@~0.1.0
+130 silly lockFile 625605b9-findup-sync-0-1-0 findup-sync@~0.1.0
+131 http 304 https://registry.npmjs.org/resolve
+132 silly registry.get cb [ 304,
+132 silly registry.get   { date: 'Fri, 31 Oct 2014 13:07:56 GMT',
+132 silly registry.get     server: 'Apache',
+132 silly registry.get     via: '1.1 varnish',
+132 silly registry.get     'last-modified': 'Fri, 31 Oct 2014 13:07:51 GMT',
+132 silly registry.get     'cache-control': 'max-age=60',
+132 silly registry.get     etag: '"E8EO3VI6KDFATVHO865FSU1SZ"',
+132 silly registry.get     age: '51',
+132 silly registry.get     'x-served-by': 'cache-lcy1122-LCY',
+132 silly registry.get     'x-cache': 'HIT',
+132 silly registry.get     'x-cache-hits': '3',
+132 silly registry.get     'x-timer': 'S1414760876.579573,VS0,VE0',
+132 silly registry.get     vary: 'Accept',
+132 silly registry.get     'content-length': '0',
+132 silly registry.get     'keep-alive': 'timeout=10, max=50',
+132 silly registry.get     connection: 'Keep-Alive' } ]
+133 verbose etag resolve from cache
+134 silly addNameRange number 2 { name: 'resolve', range: '>=0.3.1-0 <0.4.0-0', hasData: true }
+135 silly addNameRange versions [ 'resolve',
+135 silly addNameRange   [ '0.0.0',
+135 silly addNameRange     '0.0.1',
+135 silly addNameRange     '0.0.2',
+135 silly addNameRange     '0.0.3',
+135 silly addNameRange     '0.0.4',
+135 silly addNameRange     '0.1.0',
+135 silly addNameRange     '0.1.2',
+135 silly addNameRange     '0.1.3',
+135 silly addNameRange     '0.2.0',
+135 silly addNameRange     '0.2.1',
+135 silly addNameRange     '0.2.2',
+135 silly addNameRange     '0.2.3',
+135 silly addNameRange     '0.2.4',
+135 silly addNameRange     '0.2.5',
+135 silly addNameRange     '0.2.6',
+135 silly addNameRange     '0.2.7',
+135 silly addNameRange     '0.2.8',
+135 silly addNameRange     '0.3.0',
+135 silly addNameRange     '0.3.1',
+135 silly addNameRange     '0.4.0',
+135 silly addNameRange     '0.4.1',
+135 silly addNameRange     '0.4.2',
+135 silly addNameRange     '0.4.3',
+135 silly addNameRange     '0.5.0',
+135 silly addNameRange     '0.5.1',
+135 silly addNameRange     '0.6.0',
+135 silly addNameRange     '0.6.1',
+135 silly addNameRange     '0.6.2',
+135 silly addNameRange     '0.6.3',
+135 silly addNameRange     '0.7.0',
+135 silly addNameRange     '0.7.1',
+135 silly addNameRange     '0.7.2',
+135 silly addNameRange     '0.7.3',
+135 silly addNameRange     '0.7.4',
+135 silly addNameRange     '1.0.0' ] ]
+136 verbose addNamed [ 'resolve', '0.3.1' ]
+137 verbose addNamed [ '0.3.1', '0.3.1' ]
+138 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+139 verbose lock resolve@0.3.1 /home/duhame_j/.npm/95464470-resolve-0-3-1.lock
+140 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+141 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+142 silly lockFile 7958d065-resolve-0-3-1 resolve@~0.3.1
+143 silly lockFile 7958d065-resolve-0-3-1 resolve@~0.3.1
+144 http 304 https://registry.npmjs.org/nopt
+145 silly registry.get cb [ 304,
+145 silly registry.get   { date: 'Fri, 31 Oct 2014 13:08:00 GMT',
+145 silly registry.get     server: 'Apache',
+145 silly registry.get     via: '1.1 varnish',
+145 silly registry.get     'last-modified': 'Fri, 31 Oct 2014 13:08:00 GMT',
+145 silly registry.get     'cache-control': 'max-age=60',
+145 silly registry.get     etag: '"2GWKPD9CYD6ZLDZ9J2A2BHFGO"',
+145 silly registry.get     age: '13',
+145 silly registry.get     'x-served-by': 'cache-lcy1128-LCY',
+145 silly registry.get     'x-cache': 'HIT',
+145 silly registry.get     'x-cache-hits': '1',
+145 silly registry.get     'x-timer': 'S1414760880.621992,VS0,VE0',
+145 silly registry.get     vary: 'Accept',
+145 silly registry.get     'content-length': '0',
+145 silly registry.get     'keep-alive': 'timeout=10, max=50',
+145 silly registry.get     connection: 'Keep-Alive' } ]
+146 verbose etag nopt from cache
+147 silly addNameRange number 2 { name: 'nopt', range: '>=1.0.10-0 <1.1.0-0', hasData: true }
+148 silly addNameRange versions [ 'nopt',
+148 silly addNameRange   [ '1.0.0',
+148 silly addNameRange     '1.0.1',
+148 silly addNameRange     '1.0.2',
+148 silly addNameRange     '1.0.3',
+148 silly addNameRange     '1.0.4',
+148 silly addNameRange     '1.0.5',
+148 silly addNameRange     '1.0.6',
+148 silly addNameRange     '1.0.7',
+148 silly addNameRange     '1.0.8',
+148 silly addNameRange     '1.0.9',
+148 silly addNameRange     '1.0.10',
+148 silly addNameRange     '2.0.0',
+148 silly addNameRange     '2.1.0',
+148 silly addNameRange     '2.1.1',
+148 silly addNameRange     '2.1.2',
+148 silly addNameRange     '2.2.0',
+148 silly addNameRange     '2.2.1',
+148 silly addNameRange     '3.0.0',
+148 silly addNameRange     '3.0.1' ] ]
+149 verbose addNamed [ 'nopt', '1.0.10' ]
+150 verbose addNamed [ '1.0.10', '1.0.10' ]
+151 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+152 verbose lock nopt@1.0.10 /home/duhame_j/.npm/1be903a1-nopt-1-0-10.lock
+153 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+154 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+155 silly lockFile 79f78dba-nopt-1-0-10 nopt@~1.0.10
+156 silly lockFile 79f78dba-nopt-1-0-10 nopt@~1.0.10
+157 silly resolved [ { name: 'findup-sync',
+157 silly resolved     description: 'Find the first file matching a given pattern in the current directory or the nearest ancestor directory.',
+157 silly resolved     version: '0.1.3',
+157 silly resolved     homepage: 'https://github.com/cowboy/node-findup-sync',
+157 silly resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+157 silly resolved     repository:
+157 silly resolved      { type: 'git',
+157 silly resolved        url: 'git://github.com/cowboy/node-findup-sync.git' },
+157 silly resolved     bugs: { url: 'https://github.com/cowboy/node-findup-sync/issues' },
+157 silly resolved     licenses: [ [Object] ],
+157 silly resolved     main: 'lib/findup-sync',
+157 silly resolved     engines: { node: '>= 0.6.0' },
+157 silly resolved     scripts: { test: 'grunt nodeunit' },
+157 silly resolved     dependencies: { glob: '~3.2.9', lodash: '~2.4.1' },
+157 silly resolved     devDependencies:
+157 silly resolved      { grunt: '~0.4.4',
+157 silly resolved        'grunt-contrib-jshint': '~0.9.2',
+157 silly resolved        'grunt-contrib-nodeunit': '~0.3.3' },
+157 silly resolved     keywords: [ 'find', 'glob', 'file' ],
+157 silly resolved     readme: '# findup-sync [![Build Status](https://secure.travis-ci.org/cowboy/node-findup-sync.png?branch=master)](http://travis-ci.org/cowboy/node-findup-sync)\n\nFind the first file matching a given pattern in the current directory or the nearest ancestor directory.\n\n## Getting Started\nInstall the module with: `npm install findup-sync`\n\n```js\nvar findup = require(\'findup-sync\');\n\n// Start looking in the CWD.\nvar filepath1 = findup(\'{a,b}*.txt\');\n\n// Start looking somewhere else, and ignore case (probably a good idea).\nvar filepath2 = findup(\'{a,b}*.txt\', {cwd: \'/some/path\', nocase: true});\n```\n\n## Usage\n\n```js\nfindup(patternOrPatterns [, minimatchOptions])\n```\n\n### patternOrPatterns\nType: `String` or `Array`  \nDefault: none\n\nOne or more wildcard glob patterns. Or just filenames.\n\n### minimatchOptions\nType: `Object`  \nDefault: `{}`\n\nOptions to be passed to [minimatch](https://github.com/isaacs/minimatch).\n\nNote that if you want to start in a different directory than the current working directory, specify a `cwd` property here.\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n2014-03-14 - v0.1.3 - Updated dependencies.  \n2013-03-08 - v0.1.2 - Updated dependencies. Fixed a Node 0.9.x bug. Updated unit tests to work cross-platform.  \n2012-11-15 - v0.1.1 - Now works without an options object.  \n2012-11-01 - v0.1.0 - Initial release.\n',
+157 silly resolved     readmeFilename: 'README.md',
+157 silly resolved     _id: 'findup-sync@0.1.3',
+157 silly resolved     _from: 'findup-sync@~0.1.0' },
+157 silly resolved   { name: 'resolve',
+157 silly resolved     description: 'resolve like require.resolve() on behalf of files asynchronously and synchronously',
+157 silly resolved     version: '0.3.1',
+157 silly resolved     repository:
+157 silly resolved      { type: 'git',
+157 silly resolved        url: 'git://github.com/substack/node-resolve.git' },
+157 silly resolved     main: 'index.js',
+157 silly resolved     keywords: [ 'resolve', 'require', 'node', 'module' ],
+157 silly resolved     scripts: { test: 'tap test/*.js' },
+157 silly resolved     devDependencies: { tap: '~0.4.0' },
+157 silly resolved     license: 'MIT',
+157 silly resolved     author:
+157 silly resolved      { name: 'James Halliday',
+157 silly resolved        email: 'mail@substack.net',
+157 silly resolved        url: 'http://substack.net' },
+157 silly resolved     readme: '# resolve\n\nimplements the [node `require.resolve()`\nalgorithm](http://nodejs.org/docs/v0.4.8/api/all.html#all_Together...)\nsuch that you can `require.resolve()` on behalf of a file asynchronously and\nsynchronously\n\n[![build status](https://secure.travis-ci.org/substack/node-resolve.png)](http://travis-ci.org/substack/node-resolve)\n\n# example\n\nasynchronously resolve:\n\n``` js\nvar resolve = require(\'resolve\');\nresolve(\'tap\', { basedir: __dirname }, function (err, res) {\n    if (err) console.error(err)\n    else console.log(res)\n});\n```\n\n```\n$ node example/async.js\n/home/substack/projects/node-resolve/node_modules/tap/lib/main.js\n```\n\nsynchronously resolve:\n\n``` js\nvar resolve = require(\'resolve\');\nvar res = resolve.sync(\'tap\', { basedir: __dirname });\nconsole.log(res);\n```\n\n```\n$ node example/sync.js\n/home/substack/projects/node-resolve/node_modules/tap/lib/main.js\n```\n\n# methods\n\n``` js\nvar resolve = require(\'resolve\')\n```\n\n## resolve(pkg, opts={}, cb)\n\nAsynchronously resolve the module path string `pkg` into `cb(err, res)`.\n\noptions are:\n\n* opts.basedir - directory to begin resolving from\n\n* opts.extensions - array of file extensions to search in order\n\n* opts.readFile - how to read files asynchronously\n\n* opts.isFile - function to asynchronously test whether a file exists\n\n* opts.packageFilter - transform the parsed package.json contents before looking\nat the "main" field\n\n* opts.paths - require.paths array to use if nothing is found on the normal\nnode_modules recursive walk (probably don\'t use this)\n\ndefault `opts` values:\n\n``` javascript\n{\n    paths: [],\n    basedir: __dirname,\n    extensions: [ \'.js\' ],\n    readFile: fs.readFile,\n    isFile: function (file, cb) {\n        fs.stat(file, function (err, stat) {\n            if (err && err.code === \'ENOENT\') cb(null, false)\n            else if (err) cb(err)\n            else cb(null, stat.isFile())\n        });\n    }\n}\n```\n\n## resolve.sync(pkg, opts)\n\nSynchronously resolve the module path string `pkg`, returning the result and\nthrowing an error when `pkg` can\'t be resolved.\n\noptions are:\n\n* opts.basedir - directory to begin resolving from\n\n* opts.extensions - array of file extensions to search in order\n\n* opts.readFile - how to read files synchronously\n\n* opts.isFile - function to synchronously test whether a file exists\n\n* opts.packageFilter - transform the parsed package.json contents before looking\nat the "main" field\n\n* opts.paths - require.paths array to use if nothing is found on the normal\nnode_modules recursive walk (probably don\'t use this)\n\ndefault `opts` values:\n\n``` javascript\n{\n    paths: [],\n    basedir: __dirname,\n    extensions: [ \'.js\' ],\n    readFileSync: fs.readFileSync,\n    isFile: function (file) {\n        try { return fs.statSync(file).isFile() }\n        catch (e) { return false }\n    }\n}\n````\n\n## resolve.isCore(pkg)\n\nReturn whether a package is in core.\n\n# install\n\nWith [npm](https://npmjs.org) do:\n\n```\nnpm install resolve\n```\n\n# license\n\nMIT\n',
+157 silly resolved     readmeFilename: 'readme.markdown',
+157 silly resolved     bugs: { url: 'https://github.com/substack/node-resolve/issues' },
+157 silly resolved     _id: 'resolve@0.3.1',
+157 silly resolved     _from: 'resolve@~0.3.1' },
+157 silly resolved   { name: 'nopt',
+157 silly resolved     version: '1.0.10',
+157 silly resolved     description: 'Option parsing for Node, supporting types, shorthands, etc. Used by npm.',
+157 silly resolved     author:
+157 silly resolved      { name: 'Isaac Z. Schlueter',
+157 silly resolved        email: 'i@izs.me',
+157 silly resolved        url: 'http://blog.izs.me/' },
+157 silly resolved     main: 'lib/nopt.js',
+157 silly resolved     scripts: { test: 'node lib/nopt.js' },
+157 silly resolved     repository: { type: 'git', url: 'http://github.com/isaacs/nopt' },
+157 silly resolved     bin: { nopt: './bin/nopt.js' },
+157 silly resolved     license:
+157 silly resolved      { type: 'MIT',
+157 silly resolved        url: 'https://github.com/isaacs/nopt/raw/master/LICENSE' },
+157 silly resolved     dependencies: { abbrev: '1' },
+157 silly resolved     readme: 'If you want to write an option parser, and have it be good, there are\ntwo ways to do it.  The Right Way, and the Wrong Way.\n\nThe Wrong Way is to sit down and write an option parser.  We\'ve all done\nthat.\n\nThe Right Way is to write some complex configurable program with so many\noptions that you go half-insane just trying to manage them all, and put\nit off with duct-tape solutions until you see exactly to the core of the\nproblem, and finally snap and write an awesome option parser.\n\nIf you want to write an option parser, don\'t write an option parser.\nWrite a package manager, or a source control system, or a service\nrestarter, or an operating system.  You probably won\'t end up with a\ngood one of those, but if you don\'t give up, and you are relentless and\ndiligent enough in your procrastination, you may just end up with a very\nnice option parser.\n\n## USAGE\n\n    // my-program.js\n    var nopt = require("nopt")\n      , Stream = require("stream").Stream\n      , path = require("path")\n      , knownOpts = { "foo" : [String, null]\n                    , "bar" : [Stream, Number]\n                    , "baz" : path\n                    , "bloo" : [ "big", "medium", "small" ]\n                    , "flag" : Boolean\n                    , "pick" : Boolean\n                    , "many" : [String, Array]\n                    }\n      , shortHands = { "foofoo" : ["--foo", "Mr. Foo"]\n                     , "b7" : ["--bar", "7"]\n                     , "m" : ["--bloo", "medium"]\n                     , "p" : ["--pick"]\n                     , "f" : ["--flag"]\n                     }\n                 // everything is optional.\n                 // knownOpts and shorthands default to {}\n                 // arg list defaults to process.argv\n                 // slice defaults to 2\n      , parsed = nopt(knownOpts, shortHands, process.argv, 2)\n    console.log(parsed)\n\nThis would give you support for any of the following:\n\n```bash\n$ node my-program.js --foo "blerp" --no-flag\n{ "foo" : "blerp", "flag" : false }\n\n$ node my-program.js ---bar 7 --foo "Mr. Hand" --flag\n{ bar: 7, foo: "Mr. Hand", flag: true }\n\n$ node my-program.js --foo "blerp" -f -----p\n{ foo: "blerp", flag: true, pick: true }\n\n$ node my-program.js -fp --foofoo\n{ foo: "Mr. Foo", flag: true, pick: true }\n\n$ node my-program.js --foofoo -- -fp  # -- stops the flag parsing.\n{ foo: "Mr. Foo", argv: { remain: ["-fp"] } }\n\n$ node my-program.js --blatzk 1000 -fp # unknown opts are ok.\n{ blatzk: 1000, flag: true, pick: true }\n\n$ node my-program.js --blatzk true -fp # but they need a value\n{ blatzk: true, flag: true, pick: true }\n\n$ node my-program.js --no-blatzk -fp # unless they start with "no-"\n{ blatzk: false, flag: true, pick: true }\n\n$ node my-program.js --baz b/a/z # known paths are resolved.\n{ baz: "/Users/isaacs/b/a/z" }\n\n# if Array is one of the types, then it can take many\n# values, and will always be an array.  The other types provided\n# specify what types are allowed in the list.\n\n$ node my-program.js --many 1 --many null --many foo\n{ many: ["1", "null", "foo"] }\n\n$ node my-program.js --many foo\n{ many: ["foo"] }\n```\n\nRead the tests at the bottom of `lib/nopt.js` for more examples of\nwhat this puppy can do.\n\n## Types\n\nThe following types are supported, and defined on `nopt.typeDefs`\n\n* String: A normal string.  No parsing is done.\n* path: A file system path.  Gets resolved against cwd if not absolute.\n* url: A url.  If it doesn\'t parse, it isn\'t accepted.\n* Number: Must be numeric.\n* Date: Must parse as a date. If it does, and `Date` is one of the options,\n  then it will return a Date object, not a string.\n* Boolean: Must be either `true` or `false`.  If an option is a boolean,\n  then it does not need a value, and its presence will imply `true` as\n  the value.  To negate boolean flags, do `--no-whatever` or `--whatever\n  false`\n* NaN: Means that the option is strictly not allowed.  Any value will\n  fail.\n* Stream: An object matching the "Stream" class in node.  Valuable\n  for use when validating programmatically.  (npm uses this to let you\n  supply any WriteStream on the `outfd` and `logfd` config options.)\n* Array: If `Array` is specified as one of the types, then the value\n  will be parsed as a list of options.  This means that multiple values\n  can be specified, and that the value will always be an array.\n\nIf a type is an array of values not on this list, then those are\nconsidered valid values.  For instance, in the example above, the\n`--bloo` option can only be one of `"big"`, `"medium"`, or `"small"`,\nand any other value will be rejected.\n\nWhen parsing unknown fields, `"true"`, `"false"`, and `"null"` will be\ninterpreted as their JavaScript equivalents, and numeric values will be\ninterpreted as a number.\n\nYou can also mix types and values, or multiple types, in a list.  For\ninstance `{ blah: [Number, null] }` would allow a value to be set to\neither a Number or null.\n\nTo define a new type, add it to `nopt.typeDefs`.  Each item in that\nhash is an object with a `type` member and a `validate` method.  The\n`type` member is an object that matches what goes in the type list.  The\n`validate` method is a function that gets called with `validate(data,\nkey, val)`.  Validate methods should assign `data[key]` to the valid\nvalue of `val` if it can be handled properly, or return boolean\n`false` if it cannot.\n\nYou can also call `nopt.clean(data, types, typeDefs)` to clean up a\nconfig object and remove its invalid properties.\n\n## Error Handling\n\nBy default, nopt outputs a warning to standard error when invalid\noptions are found.  You can change this behavior by assigning a method\nto `nopt.invalidHandler`.  This method will be called with\nthe offending `nopt.invalidHandler(key, val, types)`.\n\nIf no `nopt.invalidHandler` is assigned, then it will console.error\nits whining.  If it is assigned to boolean `false` then the warning is\nsuppressed.\n\n## Abbreviations\n\nYes, they are supported.  If you define options like this:\n\n```javascript\n{ "foolhardyelephants" : Boolean\n, "pileofmonkeys" : Boolean }\n```\n\nThen this will work:\n\n```bash\nnode program.js --foolhar --pil\nnode program.js --no-f --pileofmon\n# etc.\n```\n\n## Shorthands\n\nShorthands are a hash of shorter option names to a snippet of args that\nthey expand to.\n\nIf multiple one-character shorthands are all combined, and the\ncombination does not unambiguously match any other option or shorthand,\nthen they will be broken up into their constituent parts.  For example:\n\n```json\n{ "s" : ["--loglevel", "silent"]\n, "g" : "--global"\n, "f" : "--force"\n, "p" : "--parseable"\n, "l" : "--long"\n}\n```\n\n```bash\nnpm ls -sgflp\n# just like doing this:\nnpm ls --loglevel silent --global --force --long --parseable\n```\n\n## The Rest of the args\n\nThe config object returned by nopt is given a special member called\n`argv`, which is an object with the following fields:\n\n* `remain`: The remaining args after all the parsing has occurred.\n* `original`: The args as they originally appeared.\n* `cooked`: The args after flags and shorthands are expanded.\n\n## Slicing\n\nNode programs are called with more or less the exact argv as it appears\nin C land, after the v8 and node-specific options have been plucked off.\nAs such, `argv[0]` is always `node` and `argv[1]` is always the\nJavaScript program being run.\n\nThat\'s usually not very useful to you.  So they\'re sliced off by\ndefault.  If you want them, then you can pass in `0` as the last\nargument, or any other number that you\'d like to slice off the start of\nthe list.\n',
+157 silly resolved     readmeFilename: 'README.md',
+157 silly resolved     bugs: { url: 'https://github.com/isaacs/nopt/issues' },
+157 silly resolved     _id: 'nopt@1.0.10',
+157 silly resolved     _from: 'nopt@~1.0.10' } ]
+158 info install findup-sync@0.1.3 into /home/duhame_j/npm/lib/node_modules/grunt-cli
+159 info install resolve@0.3.1 into /home/duhame_j/npm/lib/node_modules/grunt-cli
+160 info install nopt@1.0.10 into /home/duhame_j/npm/lib/node_modules/grunt-cli
+161 info installOne findup-sync@0.1.3
+162 info installOne resolve@0.3.1
+163 info installOne nopt@1.0.10
+164 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync unbuild
+165 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/resolve unbuild
+166 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt unbuild
+167 verbose tar unpack /home/duhame_j/.npm/findup-sync/0.1.3/package.tgz
+168 silly lockFile 6f88e926-unt-cli-node-modules-findup-sync tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync
+169 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync /home/duhame_j/.npm/6f88e926-unt-cli-node-modules-findup-sync.lock
+170 silly lockFile 1d7d8f68-pm-findup-sync-0-1-3-package-tgz tar:///home/duhame_j/.npm/findup-sync/0.1.3/package.tgz
+171 verbose lock tar:///home/duhame_j/.npm/findup-sync/0.1.3/package.tgz /home/duhame_j/.npm/1d7d8f68-pm-findup-sync-0-1-3-package-tgz.lock
+172 verbose tar unpack /home/duhame_j/.npm/resolve/0.3.1/package.tgz
+173 silly lockFile d183278c-s-grunt-cli-node-modules-resolve tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/resolve
+174 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/resolve /home/duhame_j/.npm/d183278c-s-grunt-cli-node-modules-resolve.lock
+175 silly lockFile 3951d145--j-npm-resolve-0-3-1-package-tgz tar:///home/duhame_j/.npm/resolve/0.3.1/package.tgz
+176 verbose lock tar:///home/duhame_j/.npm/resolve/0.3.1/package.tgz /home/duhame_j/.npm/3951d145--j-npm-resolve-0-3-1-package-tgz.lock
+177 verbose tar unpack /home/duhame_j/.npm/nopt/1.0.10/package.tgz
+178 silly lockFile 8bc5e516-ules-grunt-cli-node-modules-nopt tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt
+179 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt /home/duhame_j/.npm/8bc5e516-ules-grunt-cli-node-modules-nopt.lock
+180 silly lockFile 0fc18e86-me-j-npm-nopt-1-0-10-package-tgz tar:///home/duhame_j/.npm/nopt/1.0.10/package.tgz
+181 verbose lock tar:///home/duhame_j/.npm/nopt/1.0.10/package.tgz /home/duhame_j/.npm/0fc18e86-me-j-npm-nopt-1-0-10-package-tgz.lock
+182 silly gunzTarPerm modes [ '755', '644' ]
+183 silly gunzTarPerm modes [ '755', '644' ]
+184 silly gunzTarPerm modes [ '755', '644' ]
+185 silly gunzTarPerm extractEntry package.json
+186 silly gunzTarPerm extractEntry package.json
+187 silly gunzTarPerm extractEntry .npmignore
+188 silly gunzTarPerm extractEntry README.md
+189 silly gunzTarPerm extractEntry .npmignore
+190 silly gunzTarPerm extractEntry README.md
+191 silly gunzTarPerm extractEntry Gruntfile.js
+192 silly gunzTarPerm extractEntry .jshintrc
+193 silly gunzTarPerm extractEntry LICENSE
+194 silly gunzTarPerm extractEntry bin/nopt.js
+195 silly gunzTarPerm extractEntry .travis.yml
+196 silly gunzTarPerm extractEntry LICENSE-MIT
+197 silly gunzTarPerm extractEntry examples/my-program.js
+198 silly gunzTarPerm extractEntry lib/nopt.js
+199 silly gunzTarPerm extractEntry lib/findup-sync.js
+200 silly gunzTarPerm extractEntry test/findup-sync_test.js
+201 silly gunzTarPerm extractEntry test/fixtures/a/b/bar.txt
+202 silly gunzTarPerm extractEntry test/fixtures/a/foo.txt
+203 silly gunzTarPerm extractEntry test/fixtures/a.txt
+204 silly gunzTarPerm extractEntry test/fixtures/aaa.txt
+205 silly gunzTarPerm extractEntry package.json
+206 silly gunzTarPerm extractEntry LICENSE
+207 silly gunzTarPerm extractEntry index.js
+208 silly gunzTarPerm extractEntry .travis.yml
+209 silly gunzTarPerm extractEntry example/async.js
+210 silly gunzTarPerm extractEntry example/sync.js
+211 silly gunzTarPerm extractEntry lib/async.js
+212 silly gunzTarPerm extractEntry lib/core.js
+213 silly gunzTarPerm extractEntry lib/sync.js
+214 silly gunzTarPerm extractEntry lib/core.json
+215 silly gunzTarPerm extractEntry readme.markdown
+216 silly gunzTarPerm extractEntry test/core.js
+217 silly gunzTarPerm extractEntry test/filter.js
+218 silly gunzTarPerm extractEntry test/filter_sync.js
+219 silly lockFile 8bc5e516-ules-grunt-cli-node-modules-nopt tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt
+220 silly lockFile 8bc5e516-ules-grunt-cli-node-modules-nopt tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt
+221 silly lockFile 0fc18e86-me-j-npm-nopt-1-0-10-package-tgz tar:///home/duhame_j/.npm/nopt/1.0.10/package.tgz
+222 silly lockFile 0fc18e86-me-j-npm-nopt-1-0-10-package-tgz tar:///home/duhame_j/.npm/nopt/1.0.10/package.tgz
+223 info preinstall nopt@1.0.10
+224 silly gunzTarPerm extractEntry test/mock.js
+225 silly gunzTarPerm extractEntry test/mock_sync.js
+226 verbose readDependencies using package.json deps
+227 verbose readDependencies using package.json deps
+228 verbose cache add [ 'abbrev@1', null ]
+229 verbose cache add name=undefined spec="abbrev@1" args=["abbrev@1",null]
+230 verbose parsed url { protocol: null,
+230 verbose parsed url   slashes: null,
+230 verbose parsed url   auth: null,
+230 verbose parsed url   host: null,
+230 verbose parsed url   port: null,
+230 verbose parsed url   hostname: null,
+230 verbose parsed url   hash: null,
+230 verbose parsed url   search: null,
+230 verbose parsed url   query: null,
+230 verbose parsed url   pathname: 'abbrev@1',
+230 verbose parsed url   path: 'abbrev@1',
+230 verbose parsed url   href: 'abbrev@1' }
+231 verbose cache add name="abbrev" spec="1" args=["abbrev","1"]
+232 verbose parsed url { protocol: null,
+232 verbose parsed url   slashes: null,
+232 verbose parsed url   auth: null,
+232 verbose parsed url   host: null,
+232 verbose parsed url   port: null,
+232 verbose parsed url   hostname: null,
+232 verbose parsed url   hash: null,
+232 verbose parsed url   search: null,
+232 verbose parsed url   query: null,
+232 verbose parsed url   pathname: '1',
+232 verbose parsed url   path: '1',
+232 verbose parsed url   href: '1' }
+233 verbose addNamed [ 'abbrev', '1' ]
+234 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+235 silly lockFile 6830b531-abbrev-1 abbrev@1
+236 verbose lock abbrev@1 /home/duhame_j/.npm/6830b531-abbrev-1.lock
+237 silly gunzTarPerm extractEntry test/resolver.js
+238 silly gunzTarPerm extractEntry test/resolver_sync.js
+239 silly addNameRange { name: 'abbrev', range: '>=1.0.0-0 <2.0.0-0', hasData: false }
+240 silly lockFile 6f88e926-unt-cli-node-modules-findup-sync tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync
+241 silly lockFile 6f88e926-unt-cli-node-modules-findup-sync tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync
+242 silly lockFile 1d7d8f68-pm-findup-sync-0-1-3-package-tgz tar:///home/duhame_j/.npm/findup-sync/0.1.3/package.tgz
+243 silly lockFile 1d7d8f68-pm-findup-sync-0-1-3-package-tgz tar:///home/duhame_j/.npm/findup-sync/0.1.3/package.tgz
+244 info preinstall findup-sync@0.1.3
+245 verbose readDependencies using package.json deps
+246 verbose readDependencies using package.json deps
+247 silly gunzTarPerm extractEntry test/resolver/foo.js
+248 silly gunzTarPerm extractEntry test/resolver/mug.js
+249 verbose cache add [ 'glob@~3.2.9', null ]
+250 verbose cache add name=undefined spec="glob@~3.2.9" args=["glob@~3.2.9",null]
+251 verbose parsed url { protocol: null,
+251 verbose parsed url   slashes: null,
+251 verbose parsed url   auth: null,
+251 verbose parsed url   host: null,
+251 verbose parsed url   port: null,
+251 verbose parsed url   hostname: null,
+251 verbose parsed url   hash: null,
+251 verbose parsed url   search: null,
+251 verbose parsed url   query: null,
+251 verbose parsed url   pathname: 'glob@~3.2.9',
+251 verbose parsed url   path: 'glob@~3.2.9',
+251 verbose parsed url   href: 'glob@~3.2.9' }
+252 verbose cache add name="glob" spec="~3.2.9" args=["glob","~3.2.9"]
+253 verbose parsed url { protocol: null,
+253 verbose parsed url   slashes: null,
+253 verbose parsed url   auth: null,
+253 verbose parsed url   host: null,
+253 verbose parsed url   port: null,
+253 verbose parsed url   hostname: null,
+253 verbose parsed url   hash: null,
+253 verbose parsed url   search: null,
+253 verbose parsed url   query: null,
+253 verbose parsed url   pathname: '~3.2.9',
+253 verbose parsed url   path: '~3.2.9',
+253 verbose parsed url   href: '~3.2.9' }
+254 verbose addNamed [ 'glob', '~3.2.9' ]
+255 verbose addNamed [ null, '>=3.2.9-0 <3.3.0-0' ]
+256 silly lockFile 200db29c-glob-3-2-9 glob@~3.2.9
+257 verbose lock glob@~3.2.9 /home/duhame_j/.npm/200db29c-glob-3-2-9.lock
+258 verbose cache add [ 'lodash@~2.4.1', null ]
+259 verbose cache add name=undefined spec="lodash@~2.4.1" args=["lodash@~2.4.1",null]
+260 verbose parsed url { protocol: null,
+260 verbose parsed url   slashes: null,
+260 verbose parsed url   auth: null,
+260 verbose parsed url   host: null,
+260 verbose parsed url   port: null,
+260 verbose parsed url   hostname: null,
+260 verbose parsed url   hash: null,
+260 verbose parsed url   search: null,
+260 verbose parsed url   query: null,
+260 verbose parsed url   pathname: 'lodash@~2.4.1',
+260 verbose parsed url   path: 'lodash@~2.4.1',
+260 verbose parsed url   href: 'lodash@~2.4.1' }
+261 verbose cache add name="lodash" spec="~2.4.1" args=["lodash","~2.4.1"]
+262 verbose parsed url { protocol: null,
+262 verbose parsed url   slashes: null,
+262 verbose parsed url   auth: null,
+262 verbose parsed url   host: null,
+262 verbose parsed url   port: null,
+262 verbose parsed url   hostname: null,
+262 verbose parsed url   hash: null,
+262 verbose parsed url   search: null,
+262 verbose parsed url   query: null,
+262 verbose parsed url   pathname: '~2.4.1',
+262 verbose parsed url   path: '~2.4.1',
+262 verbose parsed url   href: '~2.4.1' }
+263 verbose addNamed [ 'lodash', '~2.4.1' ]
+264 verbose addNamed [ null, '>=2.4.1-0 <2.5.0-0' ]
+265 silly lockFile 257f9ab3-lodash-2-4-1 lodash@~2.4.1
+266 verbose lock lodash@~2.4.1 /home/duhame_j/.npm/257f9ab3-lodash-2-4-1.lock
+267 silly addNameRange { name: 'glob', range: '>=3.2.9-0 <3.3.0-0', hasData: false }
+268 silly addNameRange { name: 'lodash', range: '>=2.4.1-0 <2.5.0-0', hasData: false }
+269 silly gunzTarPerm extractEntry test/resolver/bar/node_modules/foo/index.js
+270 silly gunzTarPerm extractEntry test/resolver/baz/package.json
+271 silly gunzTarPerm extractEntry test/resolver/baz/doom.js
+272 silly gunzTarPerm extractEntry test/resolver/baz/quux.js
+273 verbose url raw glob
+274 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+275 verbose url resolved https://registry.npmjs.org/glob
+276 info trying registry request attempt 1 at 14:08:01
+277 verbose etag "7UCZNTOO1D5QG3X2NDNMTX6EG"
+278 http GET https://registry.npmjs.org/glob
+279 silly gunzTarPerm extractEntry test/resolver/biz/node_modules/grux/index.js
+280 silly gunzTarPerm extractEntry test/resolver/biz/node_modules/tiv/index.js
+281 silly gunzTarPerm extractEntry test/resolver/cup.coffee
+282 silly gunzTarPerm extractEntry test/resolver/mug.coffee
+283 silly gunzTarPerm extractEntry test/resolver/other_path/root.js
+284 silly gunzTarPerm extractEntry test/resolver/other_path/lib/other-lib.js
+285 verbose url raw abbrev
+286 verbose url resolving [ 'https://registry.npmjs.org/', './abbrev' ]
+287 verbose url resolved https://registry.npmjs.org/abbrev
+288 info trying registry request attempt 1 at 14:08:01
+289 verbose etag "AGMORWAFHPFPJ3WBZ2Q3A7ZE4"
+290 http GET https://registry.npmjs.org/abbrev
+291 silly lockFile d183278c-s-grunt-cli-node-modules-resolve tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/resolve
+292 silly lockFile d183278c-s-grunt-cli-node-modules-resolve tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/resolve
+293 silly lockFile 3951d145--j-npm-resolve-0-3-1-package-tgz tar:///home/duhame_j/.npm/resolve/0.3.1/package.tgz
+294 silly lockFile 3951d145--j-npm-resolve-0-3-1-package-tgz tar:///home/duhame_j/.npm/resolve/0.3.1/package.tgz
+295 info preinstall resolve@0.3.1
+296 verbose url raw lodash
+297 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+298 verbose url resolved https://registry.npmjs.org/lodash
+299 info trying registry request attempt 1 at 14:08:02
+300 verbose etag "3F20UFEICND20VE78HXZHTYKO"
+301 http GET https://registry.npmjs.org/lodash
+302 verbose readDependencies using package.json deps
+303 verbose readDependencies using package.json deps
+304 silly resolved []
+305 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/resolve
+306 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/resolve
+307 verbose linkStuff [ true,
+307 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+307 verbose linkStuff   false,
+307 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules' ]
+308 info linkStuff resolve@0.3.1
+309 verbose linkBins resolve@0.3.1
+310 verbose linkMans resolve@0.3.1
+311 verbose rebuildBundles resolve@0.3.1
+312 info install resolve@0.3.1
+313 info postinstall resolve@0.3.1
+314 http 304 https://registry.npmjs.org/abbrev
+315 silly registry.get cb [ 304,
+315 silly registry.get   { date: 'Fri, 31 Oct 2014 13:08:03 GMT',
+315 silly registry.get     server: 'Apache',
+315 silly registry.get     via: '1.1 varnish',
+315 silly registry.get     'last-modified': 'Fri, 31 Oct 2014 13:07:48 GMT',
+315 silly registry.get     'cache-control': 'max-age=60',
+315 silly registry.get     etag: '"AGMORWAFHPFPJ3WBZ2Q3A7ZE4"',
+315 silly registry.get     age: '15',
+315 silly registry.get     'x-served-by': 'cache-lcy1133-LCY',
+315 silly registry.get     'x-cache': 'HIT',
+315 silly registry.get     'x-cache-hits': '2',
+315 silly registry.get     'x-timer': 'S1414760883.563924,VS0,VE0',
+315 silly registry.get     vary: 'Accept',
+315 silly registry.get     'content-length': '0',
+315 silly registry.get     'keep-alive': 'timeout=10, max=50',
+315 silly registry.get     connection: 'Keep-Alive' } ]
+316 verbose etag abbrev from cache
+317 silly addNameRange number 2 { name: 'abbrev', range: '>=1.0.0-0 <2.0.0-0', hasData: true }
+318 silly addNameRange versions [ 'abbrev', [ '1.0.3', '1.0.4', '1.0.5' ] ]
+319 verbose addNamed [ 'abbrev', '1.0.5' ]
+320 verbose addNamed [ '1.0.5', '1.0.5' ]
+321 silly lockFile 55d90b2f-abbrev-1-0-5 abbrev@1.0.5
+322 verbose lock abbrev@1.0.5 /home/duhame_j/.npm/55d90b2f-abbrev-1-0-5.lock
+323 silly lockFile 55d90b2f-abbrev-1-0-5 abbrev@1.0.5
+324 silly lockFile 55d90b2f-abbrev-1-0-5 abbrev@1.0.5
+325 silly lockFile 6830b531-abbrev-1 abbrev@1
+326 silly lockFile 6830b531-abbrev-1 abbrev@1
+327 silly resolved [ { name: 'abbrev',
+327 silly resolved     version: '1.0.5',
+327 silly resolved     description: 'Like ruby\'s abbrev module, but in js',
+327 silly resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+327 silly resolved     main: 'abbrev.js',
+327 silly resolved     scripts: { test: 'node test.js' },
+327 silly resolved     repository: { type: 'git', url: 'http://github.com/isaacs/abbrev-js' },
+327 silly resolved     license:
+327 silly resolved      { type: 'MIT',
+327 silly resolved        url: 'https://github.com/isaacs/abbrev-js/raw/master/LICENSE' },
+327 silly resolved     readme: '# abbrev-js\n\nJust like [ruby\'s Abbrev](http://apidock.com/ruby/Abbrev).\n\nUsage:\n\n    var abbrev = require("abbrev");\n    abbrev("foo", "fool", "folding", "flop");\n    \n    // returns:\n    { fl: \'flop\'\n    , flo: \'flop\'\n    , flop: \'flop\'\n    , fol: \'folding\'\n    , fold: \'folding\'\n    , foldi: \'folding\'\n    , foldin: \'folding\'\n    , folding: \'folding\'\n    , foo: \'foo\'\n    , fool: \'fool\'\n    }\n\nThis is handy for command-line scripts, or other cases where you want to be able to accept shorthands.\n',
+327 silly resolved     readmeFilename: 'README.md',
+327 silly resolved     bugs: { url: 'https://github.com/isaacs/abbrev-js/issues' },
+327 silly resolved     _id: 'abbrev@1.0.5',
+327 silly resolved     _from: 'abbrev@1' } ]
+328 info install abbrev@1.0.5 into /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt
+329 info installOne abbrev@1.0.5
+330 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev unbuild
+331 verbose tar unpack /home/duhame_j/.npm/abbrev/1.0.5/package.tgz
+332 silly lockFile dcf78556-modules-nopt-node-modules-abbrev tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+333 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev /home/duhame_j/.npm/dcf78556-modules-nopt-node-modules-abbrev.lock
+334 silly lockFile ff93517e-e-j-npm-abbrev-1-0-5-package-tgz tar:///home/duhame_j/.npm/abbrev/1.0.5/package.tgz
+335 verbose lock tar:///home/duhame_j/.npm/abbrev/1.0.5/package.tgz /home/duhame_j/.npm/ff93517e-e-j-npm-abbrev-1-0-5-package-tgz.lock
+336 silly gunzTarPerm modes [ '755', '644' ]
+337 silly gunzTarPerm extractEntry package.json
+338 silly gunzTarPerm extractEntry README.md
+339 silly gunzTarPerm extractEntry LICENSE
+340 silly gunzTarPerm extractEntry abbrev.js
+341 silly gunzTarPerm extractEntry test.js
+342 silly gunzTarPerm extractEntry CONTRIBUTING.md
+343 silly lockFile dcf78556-modules-nopt-node-modules-abbrev tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+344 silly lockFile dcf78556-modules-nopt-node-modules-abbrev tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+345 silly lockFile ff93517e-e-j-npm-abbrev-1-0-5-package-tgz tar:///home/duhame_j/.npm/abbrev/1.0.5/package.tgz
+346 silly lockFile ff93517e-e-j-npm-abbrev-1-0-5-package-tgz tar:///home/duhame_j/.npm/abbrev/1.0.5/package.tgz
+347 info preinstall abbrev@1.0.5
+348 verbose readDependencies using package.json deps
+349 verbose readDependencies using package.json deps
+350 silly resolved []
+351 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+352 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+353 verbose linkStuff [ true,
+353 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+353 verbose linkStuff   false,
+353 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt/node_modules' ]
+354 info linkStuff abbrev@1.0.5
+355 verbose linkBins abbrev@1.0.5
+356 verbose linkMans abbrev@1.0.5
+357 verbose rebuildBundles abbrev@1.0.5
+358 info install abbrev@1.0.5
+359 info postinstall abbrev@1.0.5
+360 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt
+361 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/nopt
+362 verbose linkStuff [ true,
+362 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+362 verbose linkStuff   false,
+362 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules' ]
+363 info linkStuff nopt@1.0.10
+364 verbose linkBins nopt@1.0.10
+365 verbose link bins [ { nopt: './bin/nopt.js' },
+365 verbose link bins   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/.bin',
+365 verbose link bins   false ]
+366 verbose linkMans nopt@1.0.10
+367 verbose rebuildBundles nopt@1.0.10
+368 verbose rebuildBundles [ 'abbrev' ]
+369 info install nopt@1.0.10
+370 info postinstall nopt@1.0.10
+371 http 200 https://registry.npmjs.org/lodash
+372 silly registry.get cb [ 200,
+372 silly registry.get   { date: 'Fri, 31 Oct 2014 13:08:03 GMT',
+372 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+372 silly registry.get     etag: '"76W5SWY5RTGFK2P9JUFQ7XCGV"',
+372 silly registry.get     'content-type': 'application/json',
+372 silly registry.get     'cache-control': 'max-age=60',
+372 silly registry.get     'content-length': '73768',
+372 silly registry.get     'accept-ranges': 'bytes',
+372 silly registry.get     via: '1.1 varnish',
+372 silly registry.get     age: '2',
+372 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+372 silly registry.get     'x-cache': 'HIT',
+372 silly registry.get     'x-cache-hits': '322',
+372 silly registry.get     'x-timer': 'S1414760883.489443,VS0,VE0',
+372 silly registry.get     vary: 'Accept',
+372 silly registry.get     'keep-alive': 'timeout=10, max=50',
+372 silly registry.get     connection: 'Keep-Alive' } ]
+373 silly addNameRange number 2 { name: 'lodash', range: '>=2.4.1-0 <2.5.0-0', hasData: true }
+374 silly addNameRange versions [ 'lodash',
+374 silly addNameRange   [ '0.1.0',
+374 silly addNameRange     '0.2.0',
+374 silly addNameRange     '0.2.1',
+374 silly addNameRange     '0.2.2',
+374 silly addNameRange     '0.3.0',
+374 silly addNameRange     '0.3.1',
+374 silly addNameRange     '0.3.2',
+374 silly addNameRange     '0.4.0',
+374 silly addNameRange     '0.4.1',
+374 silly addNameRange     '0.4.2',
+374 silly addNameRange     '0.5.0-rc.1',
+374 silly addNameRange     '0.5.0',
+374 silly addNameRange     '0.5.1',
+374 silly addNameRange     '0.5.2',
+374 silly addNameRange     '0.6.0',
+374 silly addNameRange     '0.6.1',
+374 silly addNameRange     '0.7.0',
+374 silly addNameRange     '0.8.0',
+374 silly addNameRange     '0.8.1',
+374 silly addNameRange     '0.8.2',
+374 silly addNameRange     '0.9.0',
+374 silly addNameRange     '0.9.1',
+374 silly addNameRange     '0.9.2',
+374 silly addNameRange     '0.10.0',
+374 silly addNameRange     '1.0.0-rc.1',
+374 silly addNameRange     '1.0.0-rc.2',
+374 silly addNameRange     '1.0.0-rc.3',
+374 silly addNameRange     '1.0.0',
+374 silly addNameRange     '1.0.1',
+374 silly addNameRange     '1.1.0',
+374 silly addNameRange     '1.1.1',
+374 silly addNameRange     '1.2.0',
+374 silly addNameRange     '1.2.1',
+374 silly addNameRange     '1.3.0',
+374 silly addNameRange     '1.3.1',
+374 silly addNameRange     '2.0.0',
+374 silly addNameRange     '2.1.0',
+374 silly addNameRange     '2.2.0',
+374 silly addNameRange     '2.2.1',
+374 silly addNameRange     '2.3.0',
+374 silly addNameRange     '2.4.0',
+374 silly addNameRange     '2.4.1' ] ]
+375 verbose addNamed [ 'lodash', '2.4.1' ]
+376 verbose addNamed [ '2.4.1', '2.4.1' ]
+377 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+378 verbose lock lodash@2.4.1 /home/duhame_j/.npm/8502be2a-lodash-2-4-1.lock
+379 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+380 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+381 silly lockFile 257f9ab3-lodash-2-4-1 lodash@~2.4.1
+382 silly lockFile 257f9ab3-lodash-2-4-1 lodash@~2.4.1
+383 http 200 https://registry.npmjs.org/glob
+384 silly registry.get cb [ 200,
+384 silly registry.get   { date: 'Fri, 31 Oct 2014 13:08:04 GMT',
+384 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+384 silly registry.get     etag: '"YVVOYS7EUF19W7GET05G81FZ"',
+384 silly registry.get     'content-type': 'application/json',
+384 silly registry.get     'cache-control': 'max-age=60',
+384 silly registry.get     'content-length': '53199',
+384 silly registry.get     'accept-ranges': 'bytes',
+384 silly registry.get     via: '1.1 varnish',
+384 silly registry.get     age: '59',
+384 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+384 silly registry.get     'x-cache': 'HIT',
+384 silly registry.get     'x-cache-hits': '3',
+384 silly registry.get     'x-timer': 'S1414760884.331145,VS0,VE0',
+384 silly registry.get     vary: 'Accept',
+384 silly registry.get     'keep-alive': 'timeout=10, max=50',
+384 silly registry.get     connection: 'Keep-Alive' } ]
+385 silly addNameRange number 2 { name: 'glob', range: '>=3.2.9-0 <3.3.0-0', hasData: true }
+386 silly addNameRange versions [ 'glob',
+386 silly addNameRange   [ '1.1.0',
+386 silly addNameRange     '2.0.9',
+386 silly addNameRange     '2.0.8',
+386 silly addNameRange     '2.0.7',
+386 silly addNameRange     '2.1.0',
+386 silly addNameRange     '3.0.0',
+386 silly addNameRange     '3.0.1',
+386 silly addNameRange     '3.1.0',
+386 silly addNameRange     '3.1.1',
+386 silly addNameRange     '3.1.2',
+386 silly addNameRange     '3.1.3',
+386 silly addNameRange     '3.1.4',
+386 silly addNameRange     '3.1.5',
+386 silly addNameRange     '3.1.6',
+386 silly addNameRange     '3.1.7',
+386 silly addNameRange     '3.1.9',
+386 silly addNameRange     '3.1.10',
+386 silly addNameRange     '3.1.11',
+386 silly addNameRange     '3.1.12',
+386 silly addNameRange     '3.1.13',
+386 silly addNameRange     '3.1.14',
+386 silly addNameRange     '3.1.15',
+386 silly addNameRange     '3.1.16',
+386 silly addNameRange     '3.1.17',
+386 silly addNameRange     '3.1.18',
+386 silly addNameRange     '3.1.19',
+386 silly addNameRange     '3.1.20',
+386 silly addNameRange     '3.1.21',
+386 silly addNameRange     '3.2.0',
+386 silly addNameRange     '3.2.1',
+386 silly addNameRange     '3.2.3',
+386 silly addNameRange     '3.2.4',
+386 silly addNameRange     '3.2.5',
+386 silly addNameRange     '3.2.6',
+386 silly addNameRange     '3.2.7',
+386 silly addNameRange     '3.2.8',
+386 silly addNameRange     '3.2.9',
+386 silly addNameRange     '3.2.10',
+386 silly addNameRange     '3.2.11',
+386 silly addNameRange     '4.0.0',
+386 silly addNameRange     '4.0.1',
+386 silly addNameRange     '4.0.2',
+386 silly addNameRange     '4.0.3',
+386 silly addNameRange     '4.0.4',
+386 silly addNameRange     '4.0.5',
+386 silly addNameRange     '4.0.6' ] ]
+387 verbose addNamed [ 'glob', '3.2.11' ]
+388 verbose addNamed [ '3.2.11', '3.2.11' ]
+389 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+390 verbose lock glob@3.2.11 /home/duhame_j/.npm/3fffafa6-glob-3-2-11.lock
+391 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+392 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+393 silly lockFile 200db29c-glob-3-2-9 glob@~3.2.9
+394 silly lockFile 200db29c-glob-3-2-9 glob@~3.2.9
+395 silly resolved [ { name: 'lodash',
+395 silly resolved     version: '2.4.1',
+395 silly resolved     description: 'A utility library delivering consistency, customization, performance, & extras.',
+395 silly resolved     homepage: 'http://lodash.com/',
+395 silly resolved     license: 'MIT',
+395 silly resolved     main: 'dist/lodash.js',
+395 silly resolved     keywords:
+395 silly resolved      [ 'amd',
+395 silly resolved        'browser',
+395 silly resolved        'client',
+395 silly resolved        'customize',
+395 silly resolved        'functional',
+395 silly resolved        'server',
+395 silly resolved        'util' ],
+395 silly resolved     author:
+395 silly resolved      { name: 'John-David Dalton',
+395 silly resolved        email: 'john.david.dalton@gmail.com',
+395 silly resolved        url: 'http://allyoucanleet.com/' },
+395 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+395 silly resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+395 silly resolved     repository: { type: 'git', url: 'https://github.com/lodash/lodash.git' },
+395 silly resolved     engines: [ 'node', 'rhino' ],
+395 silly resolved     files:
+395 silly resolved      [ 'LICENSE.txt',
+395 silly resolved        'lodash.js',
+395 silly resolved        'dist/lodash.js',
+395 silly resolved        'dist/lodash.min.js',
+395 silly resolved        'dist/lodash.compat.js',
+395 silly resolved        'dist/lodash.compat.min.js',
+395 silly resolved        'dist/lodash.underscore.js',
+395 silly resolved        'dist/lodash.underscore.min.js' ],
+395 silly resolved     jam: { main: 'dist/lodash.compat.js', include: [Object] },
+395 silly resolved     volo: { type: 'directory', ignore: [Object] },
+395 silly resolved     readme: '# Lo-Dash v2.4.1\nA utility library delivering consistency, [customization](http://lodash.com/custom-builds), [performance](http://lodash.com/benchmarks), & [extras](http://lodash.com/#features).\n\n## Download\n\nCheck out our [wiki]([https://github.com/lodash/lodash/wiki/build-differences]) for details over the differences between builds.\n\n* Modern builds perfect for newer browsers/environments:<br>\n[Development](https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.js) &\n[Production](https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.min.js)\n\n* Compatibility builds for older environment support too:<br>\n[Development](https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.compat.js) &\n[Production](https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.compat.min.js)\n\n* Underscore builds to use as a drop-in replacement:<br>\n[Development](https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.underscore.js) &\n[Production](https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.underscore.min.js)\n\nCDN copies are available on [cdnjs](http://cdnjs.com/libraries/lodash.js/) & [jsDelivr](http://www.jsdelivr.com/#!lodash). For smaller file sizes, create [custom builds](http://lodash.com/custom-builds) with only the features needed.\n\nLove modules? We’ve got you covered with [lodash-amd](https://npmjs.org/package/lodash-amd), [lodash-es6](https://github.com/lodash/lodash-es6), [lodash-node](https://npmjs.org/package/lodash-node), & [npm packages](https://npmjs.org/browse/keyword/lodash-modularized) per method.\n\n## Dive in\n\nThere’s plenty of **[documentation](http://lodash.com/docs)**, [unit tests](http://lodash.com/tests), & [benchmarks](http://lodash.com/benchmarks).<br>\nCheck out <a href="http://devdocs.io/lodash/">DevDocs</a> as a fast, organized, & searchable interface for our documentation.\n\nThe full changelog for this release is available on our [wiki](https://github.com/lodash/lodash/wiki/Changelog).<br>\nA list of upcoming features is available on our [roadmap](https://github.com/lodash/lodash/wiki/Roadmap).\n\n## Features *not* in Underscore\n\n * AMD loader support ([curl](https://github.com/cujojs/curl), [dojo](http://dojotoolkit.org/), [requirejs](http://requirejs.org/), etc.)\n * [_(…)](http://lodash.com/docs#_) supports intuitive chaining\n * [_.at](http://lodash.com/docs#at) for cherry-picking collection values\n * [_.bindKey](http://lodash.com/docs#bindKey) for binding [*“lazy”*](http://michaux.ca/articles/lazy-function-definition-pattern) defined methods\n * [_.clone](http://lodash.com/docs#clone) supports shallow cloning of `Date` & `RegExp` objects\n * [_.cloneDeep](http://lodash.com/docs#cloneDeep) for deep cloning arrays & objects\n * [_.constant](http://lodash.com/docs#constant) & [_.property](http://lodash.com/docs#property) function generators for composing functions\n * [_.contains](http://lodash.com/docs#contains) accepts a `fromIndex`\n * [_.create](http://lodash.com/docs#create) for easier object inheritance\n * [_.createCallback](http://lodash.com/docs#createCallback) for extending callbacks in methods & mixins\n * [_.curry](http://lodash.com/docs#curry) for creating [curried](http://hughfdjackson.com/javascript/2013/07/06/why-curry-helps/) functions\n * [_.debounce](http://lodash.com/docs#debounce) & [_.throttle](http://lodash.com/docs#throttle) accept additional `options` for more control\n * [_.findIndex](http://lodash.com/docs#findIndex) & [_.findKey](http://lodash.com/docs#findKey) for finding indexes & keys\n * [_.forEach](http://lodash.com/docs#forEach) is chainable & supports exiting early\n * [_.forIn](http://lodash.com/docs#forIn) for iterating own & inherited properties\n * [_.forOwn](http://lodash.com/docs#forOwn) for iterating own properties\n * [_.isPlainObject](http://lodash.com/docs#isPlainObject) for checking if values are created by `Object`\n * [_.mapValues](http://lodash.com/docs#mapValues) for [mapping](http://lodash.com/docs#map) values to an object\n * [_.memoize](http://lodash.com/docs#memoize) exposes the `cache` of memoized functions\n * [_.merge](http://lodash.com/docs#merge) for a deep [_.extend](http://lodash.com/docs#extend)\n * [_.noop](http://lodash.com/docs#noop) for function placeholders\n * [_.now](http://lodash.com/docs#now) as a cross-browser `Date.now` alternative\n * [_.parseInt](http://lodash.com/docs#parseInt) for consistent behavior\n * [_.pull](http://lodash.com/docs#pull) & [_.remove](http://lodash.com/docs#remove) for mutating arrays\n * [_.random](http://lodash.com/docs#random) supports returning floating-point numbers\n * [_.runInContext](http://lodash.com/docs#runInContext) for easier mocking\n * [_.sortBy](http://lodash.com/docs#sortBy) supports sorting by multiple properties\n * [_.support](http://lodash.com/docs#support) for flagging environment features\n * [_.template](http://lodash.com/docs#template) supports [*“imports”*](http://lodash.com/docs#templateSettings_imports) options & [ES6 template delimiters](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-literals-string-literals)\n * [_.transform](http://lodash.com/docs#transform) as a powerful alternative to [_.reduce](http://lodash.com/docs#reduce) for transforming objects\n * [_.where](http://lodash.com/docs#where) supports deep object comparisons\n * [_.xor](http://lodash.com/docs#xor) as a companion to [_.difference](http://lodash.com/docs#difference), [_.intersection](http://lodash.com/docs#intersection), & [_.union](http://lodash.com/docs#union)\n * [_.zip](http://lodash.com/docs#zip) is capable of unzipping values\n * [_.omit](http://lodash.com/docs#omit), [_.pick](http://lodash.com/docs#pick), &\n   [more](http://lodash.com/docs "_.assign, _.clone, _.cloneDeep, _.first, _.initial, _.isEqual, _.last, _.merge, _.rest") accept callbacks\n * [_.contains](http://lodash.com/docs#contains), [_.toArray](http://lodash.com/docs#toArray), &\n   [more](http://lodash.com/docs "_.at, _.countBy, _.every, _.filter, _.find, _.forEach, _.forEachRight, _.groupBy, _.invoke, _.map, _.max, _.min, _.pluck, _.reduce, _.reduceRight, _.reject, _.shuffle, _.size, _.some, _.sortBy, _.where") accept strings\n * [_.filter](http://lodash.com/docs#filter), [_.map](http://lodash.com/docs#map), &\n   [more](http://lodash.com/docs "_.countBy, _.every, _.find, _.findKey, _.findLast, _.findLastIndex, _.findLastKey, _.first, _.groupBy, _.initial, _.last, _.max, _.min, _.reject, _.rest, _.some, _.sortBy, _.sortedIndex, _.uniq") support *“_.pluck”* & *“_.where”* shorthands\n * [_.findLast](http://lodash.com/docs#findLast), [_.findLastIndex](http://lodash.com/docs#findLastIndex), &\n   [more](http://lodash.com/docs "_.findLastKey, _.forEachRight, _.forInRight, _.forOwnRight, _.partialRight") right-associative methods\n\n## Resources\n\n * Podcasts\n  - [JavaScript Jabber](http://javascriptjabber.com/079-jsj-lo-dash-with-john-david-dalton/)\n\n * Posts\n  - [Say “Hello” to Lo-Dash](http://kitcambridge.be/blog/say-hello-to-lo-dash/)\n  - [Custom builds in Lo-Dash 2.0](http://kitcambridge.be/blog/custom-builds-in-lo-dash-2-dot-0/)\n\n * Videos\n  - [Introduction](https://vimeo.com/44154599)\n  - [Origins](https://vimeo.com/44154600)\n  - [Optimizations & builds](https://vimeo.com/44154601)\n  - [Native method use](https://vimeo.com/48576012)\n  - [Testing](https://vimeo.com/45865290)\n  - [CascadiaJS ’12](http://www.youtube.com/watch?v=dpPy4f_SeEk)\n\n A list of other community created podcasts, posts, & videos is available on our [wiki](https://github.com/lodash/lodash/wiki/Resources).\n\n## Support\n\nTested in Chrome 5~31, Firefox 2~25, IE 6-11, Opera 9.25~17, Safari 3-7, Node.js 0.6.21~0.10.22, Narwhal 0.3.2, PhantomJS 1.9.2, RingoJS 0.9, & Rhino 1.7RC5.<br>\nAutomated browser test results [are available](https://saucelabs.com/u/lodash) as well as [Travis CI](https://travis-ci.org/) builds for [lodash](https://travis-ci.org/lodash/lodash/), [lodash-cli](https://travis-ci.org/lodash/lodash-cli/), [lodash-amd](https://travis-ci.org/lodash/lodash-amd/), [lodash-node](https://travis-ci.org/lodash/lodash-node/), & [grunt-lodash](https://travis-ci.org/lodash/grunt-lodash).\n\nSpecial thanks to [Sauce Labs](https://saucelabs.com/) for providing automated browser testing.<br>\n[![Sauce Labs](http://lodash.com/_img/sauce.png)](https://saucelabs.com/ "Sauce Labs: Selenium Testing & More")\n\n## Installation & usage\n\nIn browsers:\n\n```html\n<script src="lodash.js"></script>\n```\n\nUsing [`npm`](http://npmjs.org/):\n\n```bash\nnpm i --save lodash\n\n{sudo} npm i -g lodash\nnpm ln lodash\n```\n\nIn [Node.js](http://nodejs.org/) & [Ringo](http://ringojs.org/):\n\n```js\nvar _ = require(\'lodash\');\n// or as Underscore\nvar _ = require(\'lodash/dist/lodash.underscore\');\n```\n\n**Notes:**\n * Don’t assign values to [special variable](http://nodejs.org/api/repl.html#repl_repl_features) `_` when in the REPL\n * If Lo-Dash is installed globally, run [`npm ln lodash`](http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation/) in your project’s root directory *before* requiring it\n\nIn [Rhino](http://www.mozilla.org/rhino/):\n\n```js\nload(\'lodash.js\');\n```\n\nIn an AMD loader:\n\n```js\nrequire({\n  \'packages\': [\n    { \'name\': \'lodash\', \'location\': \'path/to/lodash\', \'main\': \'lodash\' }\n  ]\n},\n[\'lodash\'], function(_) {\n  console.log(_.VERSION);\n});\n```\n\n## Author\n\n| [![twitter/jdalton](http://gravatar.com/avatar/299a3d891ff1920b69c364d061007043?s=70)](https://twitter.com/jdalton "Follow @jdalton on Twitter") |\n|---|\n| [John-David Dalton](http://allyoucanleet.com/) |\n\n## Contributors\n\n| [![twitter/blainebublitz](http://gravatar.com/avatar/ac1c67fd906c9fecd823ce302283b4c1?s=70)](https://twitter.com/blainebublitz "Follow @BlaineBublitz on Twitter") | [![twitter/kitcambridge](http://gravatar.com/avatar/6662a1d02f351b5ef2f8b4d815804661?s=70)](https://twitter.com/kitcambridge "Follow @kitcambridge on Twitter") | [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |\n|---|---|---|\n| [Blaine Bublitz](http://www.iceddev.com/) | [Kit Cambridge](http://kitcambridge.be/) | [Mathias Bynens](http://mathiasbynens.be/) |\n\n[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lodash/lodash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")\n',
+395 silly resolved     readmeFilename: 'README.md',
+395 silly resolved     _id: 'lodash@2.4.1',
+395 silly resolved     _from: 'lodash@~2.4.1' },
+395 silly resolved   { author:
+395 silly resolved      { name: 'Isaac Z. Schlueter',
+395 silly resolved        email: 'i@izs.me',
+395 silly resolved        url: 'http://blog.izs.me/' },
+395 silly resolved     name: 'glob',
+395 silly resolved     description: 'a little globber',
+395 silly resolved     version: '3.2.11',
+395 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+395 silly resolved     main: 'glob.js',
+395 silly resolved     engines: { node: '*' },
+395 silly resolved     dependencies: { inherits: '2', minimatch: '0.3' },
+395 silly resolved     devDependencies: { tap: '~0.4.0', mkdirp: '0', rimraf: '1' },
+395 silly resolved     scripts:
+395 silly resolved      { test: 'tap test/*.js',
+395 silly resolved        'test-regen': 'TEST_REGEN=1 node test/00-setup.js' },
+395 silly resolved     license: 'BSD',
+395 silly resolved     readme: '# Glob\n\nMatch files using the patterns the shell uses, like stars and stuff.\n\nThis is a glob implementation in JavaScript.  It uses the `minimatch`\nlibrary to do its matching.\n\n## Attention: node-glob users!\n\nThe API has changed dramatically between 2.x and 3.x. This library is\nnow 100% JavaScript, and the integer flags have been replaced with an\noptions object.\n\nAlso, there\'s an event emitter class, proper tests, and all the other\nthings you\'ve come to expect from node modules.\n\nAnd best of all, no compilation!\n\n## Usage\n\n```javascript\nvar glob = require("glob")\n\n// options is optional\nglob("**/*.js", options, function (er, files) {\n  // files is an array of filenames.\n  // If the `nonull` option is set, and nothing\n  // was found, then files is ["**/*.js"]\n  // er is an error object or null.\n})\n```\n\n## Features\n\nPlease see the [minimatch\ndocumentation](https://github.com/isaacs/minimatch) for more details.\n\nSupports these glob features:\n\n* Brace Expansion\n* Extended glob matching\n* "Globstar" `**` matching\n\nSee:\n\n* `man sh`\n* `man bash`\n* `man 3 fnmatch`\n* `man 5 gitignore`\n* [minimatch documentation](https://github.com/isaacs/minimatch)\n\n## glob(pattern, [options], cb)\n\n* `pattern` {String} Pattern to be matched\n* `options` {Object}\n* `cb` {Function}\n  * `err` {Error | null}\n  * `matches` {Array<String>} filenames found matching the pattern\n\nPerform an asynchronous glob search.\n\n## glob.sync(pattern, [options])\n\n* `pattern` {String} Pattern to be matched\n* `options` {Object}\n* return: {Array<String>} filenames found matching the pattern\n\nPerform a synchronous glob search.\n\n## Class: glob.Glob\n\nCreate a Glob object by instanting the `glob.Glob` class.\n\n```javascript\nvar Glob = require("glob").Glob\nvar mg = new Glob(pattern, options, cb)\n```\n\nIt\'s an EventEmitter, and starts walking the filesystem to find matches\nimmediately.\n\n### new glob.Glob(pattern, [options], [cb])\n\n* `pattern` {String} pattern to search for\n* `options` {Object}\n* `cb` {Function} Called when an error occurs, or matches are found\n  * `err` {Error | null}\n  * `matches` {Array<String>} filenames found matching the pattern\n\nNote that if the `sync` flag is set in the options, then matches will\nbe immediately available on the `g.found` member.\n\n### Properties\n\n* `minimatch` The minimatch object that the glob uses.\n* `options` The options object passed in.\n* `error` The error encountered.  When an error is encountered, the\n  glob object is in an undefined state, and should be discarded.\n* `aborted` Boolean which is set to true when calling `abort()`.  There\n  is no way at this time to continue a glob search after aborting, but\n  you can re-use the statCache to avoid having to duplicate syscalls.\n* `statCache` Collection of all the stat results the glob search\n  performed.\n* `cache` Convenience object.  Each field has the following possible\n  values:\n  * `false` - Path does not exist\n  * `true` - Path exists\n  * `1` - Path exists, and is not a directory\n  * `2` - Path exists, and is a directory\n  * `[file, entries, ...]` - Path exists, is a directory, and the\n    array value is the results of `fs.readdir`\n\n### Events\n\n* `end` When the matching is finished, this is emitted with all the\n  matches found.  If the `nonull` option is set, and no match was found,\n  then the `matches` list contains the original pattern.  The matches\n  are sorted, unless the `nosort` flag is set.\n* `match` Every time a match is found, this is emitted with the matched.\n* `error` Emitted when an unexpected error is encountered, or whenever\n  any fs error occurs if `options.strict` is set.\n* `abort` When `abort()` is called, this event is raised.\n\n### Methods\n\n* `abort` Stop the search.\n\n### Options\n\nAll the options that can be passed to Minimatch can also be passed to\nGlob to change pattern matching behavior.  Also, some have been added,\nor have glob-specific ramifications.\n\nAll options are false by default, unless otherwise noted.\n\nAll options are added to the glob object, as well.\n\n* `cwd` The current working directory in which to search.  Defaults\n  to `process.cwd()`.\n* `root` The place where patterns starting with `/` will be mounted\n  onto.  Defaults to `path.resolve(options.cwd, "/")` (`/` on Unix\n  systems, and `C:\\` or some such on Windows.)\n* `dot` Include `.dot` files in normal matches and `globstar` matches.\n  Note that an explicit dot in a portion of the pattern will always\n  match dot files.\n* `nomount` By default, a pattern starting with a forward-slash will be\n  "mounted" onto the root setting, so that a valid filesystem path is\n  returned.  Set this flag to disable that behavior.\n* `mark` Add a `/` character to directory matches.  Note that this\n  requires additional stat calls.\n* `nosort` Don\'t sort the results.\n* `stat` Set to true to stat *all* results.  This reduces performance\n  somewhat, and is completely unnecessary, unless `readdir` is presumed\n  to be an untrustworthy indicator of file existence.  It will cause\n  ELOOP to be triggered one level sooner in the case of cyclical\n  symbolic links.\n* `silent` When an unusual error is encountered\n  when attempting to read a directory, a warning will be printed to\n  stderr.  Set the `silent` option to true to suppress these warnings.\n* `strict` When an unusual error is encountered\n  when attempting to read a directory, the process will just continue on\n  in search of other matches.  Set the `strict` option to raise an error\n  in these cases.\n* `cache` See `cache` property above.  Pass in a previously generated\n  cache object to save some fs calls.\n* `statCache` A cache of results of filesystem information, to prevent\n  unnecessary stat calls.  While it should not normally be necessary to\n  set this, you may pass the statCache from one glob() call to the\n  options object of another, if you know that the filesystem will not\n  change between calls.  (See "Race Conditions" below.)\n* `sync` Perform a synchronous glob search.\n* `nounique` In some cases, brace-expanded patterns can result in the\n  same file showing up multiple times in the result set.  By default,\n  this implementation prevents duplicates in the result set.\n  Set this flag to disable that behavior.\n* `nonull` Set to never return an empty set, instead returning a set\n  containing the pattern itself.  This is the default in glob(3).\n* `nocase` Perform a case-insensitive match.  Note that case-insensitive\n  filesystems will sometimes result in glob returning results that are\n  case-insensitively matched anyway, since readdir and stat will not\n  raise an error.\n* `debug` Set to enable debug logging in minimatch and glob.\n* `globDebug` Set to enable debug logging in glob, but not minimatch.\n\n## Comparisons to other fnmatch/glob implementations\n\nWhile strict compliance with the existing standards is a worthwhile\ngoal, some discrepancies exist between node-glob and other\nimplementations, and are intentional.\n\nIf the pattern starts with a `!` character, then it is negated.  Set the\n`nonegate` flag to suppress this behavior, and treat leading `!`\ncharacters normally.  This is perhaps relevant if you wish to start the\npattern with a negative extglob pattern like `!(a|B)`.  Multiple `!`\ncharacters at the start of a pattern will negate the pattern multiple\ntimes.\n\nIf a pattern starts with `#`, then it is treated as a comment, and\nwill not match anything.  Use `\\#` to match a literal `#` at the\nstart of a line, or set the `nocomment` flag to suppress this behavior.\n\nThe double-star character `**` is supported by default, unless the\n`noglobstar` flag is set.  This is supported in the manner of bsdglob\nand bash 4.1, where `**` only has special significance if it is the only\nthing in a path part.  That is, `a/**/b` will match `a/x/y/b`, but\n`a/**b` will not.\n\nIf an escaped pattern has no matches, and the `nonull` flag is set,\nthen glob returns the pattern as-provided, rather than\ninterpreting the character escapes.  For example,\n`glob.match([], "\\\\*a\\\\?")` will return `"\\\\*a\\\\?"` rather than\n`"*a?"`.  This is akin to setting the `nullglob` option in bash, except\nthat it does not resolve escaped pattern characters.\n\nIf brace expansion is not disabled, then it is performed before any\nother interpretation of the glob pattern.  Thus, a pattern like\n`+(a|{b),c)}`, which would not be valid in bash or zsh, is expanded\n**first** into the set of `+(a|b)` and `+(a|c)`, and those patterns are\nchecked for validity.  Since those two are valid, matching proceeds.\n\n## Windows\n\n**Please only use forward-slashes in glob expressions.**\n\nThough windows uses either `/` or `\\` as its path separator, only `/`\ncharacters are used by this glob implementation.  You must use\nforward-slashes **only** in glob expressions.  Back-slashes will always\nbe interpreted as escape characters, not path separators.\n\nResults from absolute patterns such as `/foo/*` are mounted onto the\nroot setting using `path.join`.  On windows, this will by default result\nin `/foo/*` matching `C:\\foo\\bar.txt`.\n\n## Race Conditions\n\nGlob searching, by its very nature, is susceptible to race conditions,\nsince it relies on directory walking and such.\n\nAs a result, it is possible that a file that exists when glob looks for\nit may have been deleted or modified by the time it returns the result.\n\nAs part of its internal implementation, this program caches all stat\nand readdir calls that it makes, in order to cut down on system\noverhead.  However, this also makes it even more susceptible to races,\nespecially if the cache or statCache objects are reused between glob\ncalls.\n\nUsers are thus advised not to use a glob result as a guarantee of\nfilesystem state in the face of rapid changes.  For the vast majority\nof operations, this is never a problem.\n',
+395 silly resolved     readmeFilename: 'README.md',
+395 silly resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+395 silly resolved     _id: 'glob@3.2.11',
+395 silly resolved     _from: 'glob@~3.2.9' } ]
+396 info install lodash@2.4.1 into /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync
+397 info install glob@3.2.11 into /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync
+398 info installOne lodash@2.4.1
+399 info installOne glob@3.2.11
+400 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/lodash unbuild
+401 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob unbuild
+402 verbose tar unpack /home/duhame_j/.npm/lodash/2.4.1/package.tgz
+403 silly lockFile ca1ae0bd--findup-sync-node-modules-lodash tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/lodash
+404 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/lodash /home/duhame_j/.npm/ca1ae0bd--findup-sync-node-modules-lodash.lock
+405 silly lockFile 2ff5cefd-e-j-npm-lodash-2-4-1-package-tgz tar:///home/duhame_j/.npm/lodash/2.4.1/package.tgz
+406 verbose lock tar:///home/duhame_j/.npm/lodash/2.4.1/package.tgz /home/duhame_j/.npm/2ff5cefd-e-j-npm-lodash-2-4-1-package-tgz.lock
+407 verbose tar unpack /home/duhame_j/.npm/glob/3.2.11/package.tgz
+408 silly lockFile 2ebd4410-es-findup-sync-node-modules-glob tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+409 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob /home/duhame_j/.npm/2ebd4410-es-findup-sync-node-modules-glob.lock
+410 silly lockFile bc22c751-me-j-npm-glob-3-2-11-package-tgz tar:///home/duhame_j/.npm/glob/3.2.11/package.tgz
+411 verbose lock tar:///home/duhame_j/.npm/glob/3.2.11/package.tgz /home/duhame_j/.npm/bc22c751-me-j-npm-glob-3-2-11-package-tgz.lock
+412 silly gunzTarPerm modes [ '755', '644' ]
+413 silly gunzTarPerm modes [ '755', '644' ]
+414 silly gunzTarPerm extractEntry package.json
+415 silly gunzTarPerm extractEntry .npmignore
+416 silly gunzTarPerm extractEntry README.md
+417 silly gunzTarPerm extractEntry LICENSE
+418 silly gunzTarPerm extractEntry glob.js
+419 silly gunzTarPerm extractEntry .travis.yml
+420 silly gunzTarPerm extractEntry examples/g.js
+421 silly gunzTarPerm extractEntry examples/usr-local.js
+422 silly gunzTarPerm extractEntry test/00-setup.js
+423 silly gunzTarPerm extractEntry test/cwd-test.js
+424 silly gunzTarPerm extractEntry package.json
+425 silly gunzTarPerm extractEntry README.md
+426 silly gunzTarPerm extractEntry lodash.js
+427 silly gunzTarPerm extractEntry test/globstar-match.js
+428 silly gunzTarPerm extractEntry test/mark.js
+429 silly gunzTarPerm extractEntry LICENSE.txt
+430 silly gunzTarPerm extractEntry dist/lodash.compat.js
+431 silly gunzTarPerm extractEntry test/stat.js
+432 silly gunzTarPerm extractEntry test/bash-comparison.js
+433 silly gunzTarPerm extractEntry test/pause-resume.js
+434 silly gunzTarPerm extractEntry test/readme-issue.js
+435 silly gunzTarPerm extractEntry test/root-nomount.js
+436 silly gunzTarPerm extractEntry test/root.js
+437 silly gunzTarPerm extractEntry dist/lodash.compat.min.js
+438 silly gunzTarPerm extractEntry test/new-glob-optional-options.js
+439 silly gunzTarPerm extractEntry test/zz-cleanup.js
+440 silly gunzTarPerm extractEntry test/nocase-nomagic.js
+441 silly gunzTarPerm extractEntry test/bash-results.json
+442 silly lockFile 2ebd4410-es-findup-sync-node-modules-glob tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+443 silly lockFile 2ebd4410-es-findup-sync-node-modules-glob tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+444 silly lockFile bc22c751-me-j-npm-glob-3-2-11-package-tgz tar:///home/duhame_j/.npm/glob/3.2.11/package.tgz
+445 silly lockFile bc22c751-me-j-npm-glob-3-2-11-package-tgz tar:///home/duhame_j/.npm/glob/3.2.11/package.tgz
+446 info preinstall glob@3.2.11
+447 verbose readDependencies using package.json deps
+448 verbose readDependencies using package.json deps
+449 verbose cache add [ 'inherits@2', null ]
+450 verbose cache add name=undefined spec="inherits@2" args=["inherits@2",null]
+451 verbose parsed url { protocol: null,
+451 verbose parsed url   slashes: null,
+451 verbose parsed url   auth: null,
+451 verbose parsed url   host: null,
+451 verbose parsed url   port: null,
+451 verbose parsed url   hostname: null,
+451 verbose parsed url   hash: null,
+451 verbose parsed url   search: null,
+451 verbose parsed url   query: null,
+451 verbose parsed url   pathname: 'inherits@2',
+451 verbose parsed url   path: 'inherits@2',
+451 verbose parsed url   href: 'inherits@2' }
+452 verbose cache add name="inherits" spec="2" args=["inherits","2"]
+453 verbose parsed url { protocol: null,
+453 verbose parsed url   slashes: null,
+453 verbose parsed url   auth: null,
+453 verbose parsed url   host: null,
+453 verbose parsed url   port: null,
+453 verbose parsed url   hostname: null,
+453 verbose parsed url   hash: null,
+453 verbose parsed url   search: null,
+453 verbose parsed url   query: null,
+453 verbose parsed url   pathname: '2',
+453 verbose parsed url   path: '2',
+453 verbose parsed url   href: '2' }
+454 verbose addNamed [ 'inherits', '2' ]
+455 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+456 silly lockFile 1f7ff4de-inherits-2 inherits@2
+457 verbose lock inherits@2 /home/duhame_j/.npm/1f7ff4de-inherits-2.lock
+458 verbose cache add [ 'minimatch@0.3', null ]
+459 verbose cache add name=undefined spec="minimatch@0.3" args=["minimatch@0.3",null]
+460 verbose parsed url { protocol: null,
+460 verbose parsed url   slashes: null,
+460 verbose parsed url   auth: null,
+460 verbose parsed url   host: null,
+460 verbose parsed url   port: null,
+460 verbose parsed url   hostname: null,
+460 verbose parsed url   hash: null,
+460 verbose parsed url   search: null,
+460 verbose parsed url   query: null,
+460 verbose parsed url   pathname: 'minimatch@0.3',
+460 verbose parsed url   path: 'minimatch@0.3',
+460 verbose parsed url   href: 'minimatch@0.3' }
+461 verbose cache add name="minimatch" spec="0.3" args=["minimatch","0.3"]
+462 verbose parsed url { protocol: null,
+462 verbose parsed url   slashes: null,
+462 verbose parsed url   auth: null,
+462 verbose parsed url   host: null,
+462 verbose parsed url   port: null,
+462 verbose parsed url   hostname: null,
+462 verbose parsed url   hash: null,
+462 verbose parsed url   search: null,
+462 verbose parsed url   query: null,
+462 verbose parsed url   pathname: '0.3',
+462 verbose parsed url   path: '0.3',
+462 verbose parsed url   href: '0.3' }
+463 verbose addNamed [ 'minimatch', '0.3' ]
+464 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+465 silly lockFile d43e9cee-minimatch-0-3 minimatch@0.3
+466 verbose lock minimatch@0.3 /home/duhame_j/.npm/d43e9cee-minimatch-0-3.lock
+467 silly addNameRange { name: 'inherits', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
+468 silly addNameRange { name: 'minimatch',
+468 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+468 silly addNameRange   hasData: false }
+469 silly gunzTarPerm extractEntry dist/lodash.js
+470 silly gunzTarPerm extractEntry dist/lodash.min.js
+471 silly gunzTarPerm extractEntry dist/lodash.underscore.js
+472 silly gunzTarPerm extractEntry dist/lodash.underscore.min.js
+473 verbose url raw minimatch
+474 verbose url resolving [ 'https://registry.npmjs.org/', './minimatch' ]
+475 verbose url resolved https://registry.npmjs.org/minimatch
+476 info trying registry request attempt 1 at 14:08:10
+477 verbose etag "DJRLDPA98I9L6YA58JA95JQFQ"
+478 http GET https://registry.npmjs.org/minimatch
+479 verbose url raw inherits
+480 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+481 verbose url resolved https://registry.npmjs.org/inherits
+482 info trying registry request attempt 1 at 14:08:10
+483 verbose etag "4HKEWVWX7W0PKAF3UJZOADCGX"
+484 http GET https://registry.npmjs.org/inherits
+485 silly lockFile ca1ae0bd--findup-sync-node-modules-lodash tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/lodash
+486 silly lockFile ca1ae0bd--findup-sync-node-modules-lodash tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/lodash
+487 silly lockFile 2ff5cefd-e-j-npm-lodash-2-4-1-package-tgz tar:///home/duhame_j/.npm/lodash/2.4.1/package.tgz
+488 silly lockFile 2ff5cefd-e-j-npm-lodash-2-4-1-package-tgz tar:///home/duhame_j/.npm/lodash/2.4.1/package.tgz
+489 info preinstall lodash@2.4.1
+490 verbose readDependencies using package.json deps
+491 verbose readDependencies using package.json deps
+492 silly resolved []
+493 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/lodash
+494 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/lodash
+495 verbose linkStuff [ true,
+495 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+495 verbose linkStuff   false,
+495 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules' ]
+496 info linkStuff lodash@2.4.1
+497 verbose linkBins lodash@2.4.1
+498 verbose linkMans lodash@2.4.1
+499 verbose rebuildBundles lodash@2.4.1
+500 info install lodash@2.4.1
+501 info postinstall lodash@2.4.1
+502 http 304 https://registry.npmjs.org/inherits
+503 silly registry.get cb [ 304,
+503 silly registry.get   { date: 'Fri, 31 Oct 2014 13:08:10 GMT',
+503 silly registry.get     server: 'Apache',
+503 silly registry.get     via: '1.1 varnish',
+503 silly registry.get     'last-modified': 'Fri, 31 Oct 2014 13:08:10 GMT',
+503 silly registry.get     'cache-control': 'max-age=60',
+503 silly registry.get     etag: '"4HKEWVWX7W0PKAF3UJZOADCGX"',
+503 silly registry.get     age: '3',
+503 silly registry.get     'x-served-by': 'cache-lcy1125-LCY',
+503 silly registry.get     'x-cache': 'HIT',
+503 silly registry.get     'x-cache-hits': '1',
+503 silly registry.get     'x-timer': 'S1414760890.472150,VS0,VE0',
+503 silly registry.get     vary: 'Accept',
+503 silly registry.get     'content-length': '0',
+503 silly registry.get     'keep-alive': 'timeout=10, max=50',
+503 silly registry.get     connection: 'Keep-Alive' } ]
+504 verbose etag inherits from cache
+505 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+506 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1' ] ]
+507 verbose addNamed [ 'inherits', '2.0.1' ]
+508 verbose addNamed [ '2.0.1', '2.0.1' ]
+509 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+510 verbose lock inherits@2.0.1 /home/duhame_j/.npm/2b2e8f1b-inherits-2-0-1.lock
+511 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+512 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+513 silly lockFile 1f7ff4de-inherits-2 inherits@2
+514 silly lockFile 1f7ff4de-inherits-2 inherits@2
+515 http 200 https://registry.npmjs.org/minimatch
+516 silly registry.get cb [ 200,
+516 silly registry.get   { date: 'Fri, 31 Oct 2014 13:08:10 GMT',
+516 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+516 silly registry.get     etag: '"2G1MZ9U2ETSTYCZ2QBLRR57LO"',
+516 silly registry.get     'content-type': 'application/json',
+516 silly registry.get     'cache-control': 'max-age=60',
+516 silly registry.get     'content-length': '32515',
+516 silly registry.get     'accept-ranges': 'bytes',
+516 silly registry.get     via: '1.1 varnish',
+516 silly registry.get     age: '11',
+516 silly registry.get     'x-served-by': 'cache-lcy1124-LCY',
+516 silly registry.get     'x-cache': 'HIT',
+516 silly registry.get     'x-cache-hits': '2',
+516 silly registry.get     'x-timer': 'S1414760890.469736,VS0,VE5',
+516 silly registry.get     vary: 'Accept',
+516 silly registry.get     'keep-alive': 'timeout=10, max=50',
+516 silly registry.get     connection: 'Keep-Alive' } ]
+517 silly addNameRange number 2 { name: 'minimatch', range: '>=0.3.0-0 <0.4.0-0', hasData: true }
+518 silly addNameRange versions [ 'minimatch',
+518 silly addNameRange   [ '0.0.1',
+518 silly addNameRange     '0.0.2',
+518 silly addNameRange     '0.0.4',
+518 silly addNameRange     '0.0.5',
+518 silly addNameRange     '0.1.1',
+518 silly addNameRange     '0.1.2',
+518 silly addNameRange     '0.1.3',
+518 silly addNameRange     '0.1.4',
+518 silly addNameRange     '0.1.5',
+518 silly addNameRange     '0.2.0',
+518 silly addNameRange     '0.2.2',
+518 silly addNameRange     '0.2.3',
+518 silly addNameRange     '0.2.4',
+518 silly addNameRange     '0.2.5',
+518 silly addNameRange     '0.2.6',
+518 silly addNameRange     '0.2.7',
+518 silly addNameRange     '0.2.8',
+518 silly addNameRange     '0.2.9',
+518 silly addNameRange     '0.2.10',
+518 silly addNameRange     '0.2.11',
+518 silly addNameRange     '0.2.12',
+518 silly addNameRange     '0.2.13',
+518 silly addNameRange     '0.2.14',
+518 silly addNameRange     '0.3.0',
+518 silly addNameRange     '0.4.0',
+518 silly addNameRange     '1.0.0' ] ]
+519 verbose addNamed [ 'minimatch', '0.3.0' ]
+520 verbose addNamed [ '0.3.0', '0.3.0' ]
+521 silly lockFile fbcfe8c1-minimatch-0-3-0 minimatch@0.3.0
+522 verbose lock minimatch@0.3.0 /home/duhame_j/.npm/fbcfe8c1-minimatch-0-3-0.lock
+523 silly lockFile fbcfe8c1-minimatch-0-3-0 minimatch@0.3.0
+524 silly lockFile fbcfe8c1-minimatch-0-3-0 minimatch@0.3.0
+525 silly lockFile d43e9cee-minimatch-0-3 minimatch@0.3
+526 silly lockFile d43e9cee-minimatch-0-3 minimatch@0.3
+527 silly resolved [ { name: 'inherits',
+527 silly resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+527 silly resolved     version: '2.0.1',
+527 silly resolved     keywords:
+527 silly resolved      [ 'inheritance',
+527 silly resolved        'class',
+527 silly resolved        'klass',
+527 silly resolved        'oop',
+527 silly resolved        'object-oriented',
+527 silly resolved        'inherits',
+527 silly resolved        'browser',
+527 silly resolved        'browserify' ],
+527 silly resolved     main: './inherits.js',
+527 silly resolved     browser: './inherits_browser.js',
+527 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits' },
+527 silly resolved     license: 'ISC',
+527 silly resolved     scripts: { test: 'node test' },
+527 silly resolved     readme: 'Browser-friendly inheritance fully compatible with standard node.js\n[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).\n\nThis package exports standard `inherits` from node.js `util` module in\nnode environment, but also provides alternative browser-friendly\nimplementation through [browser\nfield](https://gist.github.com/shtylman/4339901). Alternative\nimplementation is a literal copy of standard one located in standalone\nmodule to avoid requiring of `util`. It also has a shim for old\nbrowsers with no `Object.create` support.\n\nWhile keeping you sure you are using standard `inherits`\nimplementation in node.js environment, it allows bundlers such as\n[browserify](https://github.com/substack/node-browserify) to not\ninclude full `util` package to your client code if all you need is\njust `inherits` function. It worth, because browser shim for `util`\npackage is large and `inherits` is often the single function you need\nfrom it.\n\nIt\'s recommended to use this package instead of\n`require(\'util\').inherits` for any code that has chances to be used\nnot only in node.js but in browser too.\n\n## usage\n\n```js\nvar inherits = require(\'inherits\');\n// then use exactly as the standard one\n```\n\n## note on version ~1.0\n\nVersion ~1.0 had completely different motivation and is not compatible\nneither with 2.0 nor with standard node.js `inherits`.\n\nIf you are using version ~1.0 and planning to switch to ~2.0, be\ncareful:\n\n* new version uses `super_` instead of `super` for referencing\n  superclass\n* new version overwrites current prototype while old one preserves any\n  existing fields on it\n',
+527 silly resolved     readmeFilename: 'README.md',
+527 silly resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+527 silly resolved     _id: 'inherits@2.0.1',
+527 silly resolved     _from: 'inherits@2' },
+527 silly resolved   { author:
+527 silly resolved      { name: 'Isaac Z. Schlueter',
+527 silly resolved        email: 'i@izs.me',
+527 silly resolved        url: 'http://blog.izs.me' },
+527 silly resolved     name: 'minimatch',
+527 silly resolved     description: 'a glob matcher in javascript',
+527 silly resolved     version: '0.3.0',
+527 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+527 silly resolved     main: 'minimatch.js',
+527 silly resolved     scripts: { test: 'tap test/*.js' },
+527 silly resolved     engines: { node: '*' },
+527 silly resolved     dependencies: { 'lru-cache': '2', sigmund: '~1.0.0' },
+527 silly resolved     devDependencies: { tap: '' },
+527 silly resolved     license:
+527 silly resolved      { type: 'MIT',
+527 silly resolved        url: 'http://github.com/isaacs/minimatch/raw/master/LICENSE' },
+527 silly resolved     readme: '# minimatch\n\nA minimal matching utility.\n\n[![Build Status](https://secure.travis-ci.org/isaacs/minimatch.png)](http://travis-ci.org/isaacs/minimatch)\n\n\nThis is the matching library used internally by npm.\n\nEventually, it will replace the C binding in node-glob.\n\nIt works by converting glob expressions into JavaScript `RegExp`\nobjects.\n\n## Usage\n\n```javascript\nvar minimatch = require("minimatch")\n\nminimatch("bar.foo", "*.foo") // true!\nminimatch("bar.foo", "*.bar") // false!\nminimatch("bar.foo", "*.+(bar|foo)", { debug: true }) // true, and noisy!\n```\n\n## Features\n\nSupports these glob features:\n\n* Brace Expansion\n* Extended glob matching\n* "Globstar" `**` matching\n\nSee:\n\n* `man sh`\n* `man bash`\n* `man 3 fnmatch`\n* `man 5 gitignore`\n\n## Minimatch Class\n\nCreate a minimatch object by instanting the `minimatch.Minimatch` class.\n\n```javascript\nvar Minimatch = require("minimatch").Minimatch\nvar mm = new Minimatch(pattern, options)\n```\n\n### Properties\n\n* `pattern` The original pattern the minimatch object represents.\n* `options` The options supplied to the constructor.\n* `set` A 2-dimensional array of regexp or string expressions.\n  Each row in the\n  array corresponds to a brace-expanded pattern.  Each item in the row\n  corresponds to a single path-part.  For example, the pattern\n  `{a,b/c}/d` would expand to a set of patterns like:\n\n        [ [ a, d ]\n        , [ b, c, d ] ]\n\n    If a portion of the pattern doesn\'t have any "magic" in it\n    (that is, it\'s something like `"foo"` rather than `fo*o?`), then it\n    will be left as a string rather than converted to a regular\n    expression.\n\n* `regexp` Created by the `makeRe` method.  A single regular expression\n  expressing the entire pattern.  This is useful in cases where you wish\n  to use the pattern somewhat like `fnmatch(3)` with `FNM_PATH` enabled.\n* `negate` True if the pattern is negated.\n* `comment` True if the pattern is a comment.\n* `empty` True if the pattern is `""`.\n\n### Methods\n\n* `makeRe` Generate the `regexp` member if necessary, and return it.\n  Will return `false` if the pattern is invalid.\n* `match(fname)` Return true if the filename matches the pattern, or\n  false otherwise.\n* `matchOne(fileArray, patternArray, partial)` Take a `/`-split\n  filename, and match it against a single row in the `regExpSet`.  This\n  method is mainly for internal use, but is exposed so that it can be\n  used by a glob-walker that needs to avoid excessive filesystem calls.\n\nAll other methods are internal, and will be called as necessary.\n\n## Functions\n\nThe top-level exported function has a `cache` property, which is an LRU\ncache set to store 100 items.  So, calling these methods repeatedly\nwith the same pattern and options will use the same Minimatch object,\nsaving the cost of parsing it multiple times.\n\n### minimatch(path, pattern, options)\n\nMain export.  Tests a path against the pattern using the options.\n\n```javascript\nvar isJS = minimatch(file, "*.js", { matchBase: true })\n```\n\n### minimatch.filter(pattern, options)\n\nReturns a function that tests its\nsupplied argument, suitable for use with `Array.filter`.  Example:\n\n```javascript\nvar javascripts = fileList.filter(minimatch.filter("*.js", {matchBase: true}))\n```\n\n### minimatch.match(list, pattern, options)\n\nMatch against the list of\nfiles, in the style of fnmatch or glob.  If nothing is matched, and\noptions.nonull is set, then return a list containing the pattern itself.\n\n```javascript\nvar javascripts = minimatch.match(fileList, "*.js", {matchBase: true}))\n```\n\n### minimatch.makeRe(pattern, options)\n\nMake a regular expression object from the pattern.\n\n## Options\n\nAll options are `false` by default.\n\n### debug\n\nDump a ton of stuff to stderr.\n\n### nobrace\n\nDo not expand `{a,b}` and `{1..3}` brace sets.\n\n### noglobstar\n\nDisable `**` matching against multiple folder names.\n\n### dot\n\nAllow patterns to match filenames starting with a period, even if\nthe pattern does not explicitly have a period in that spot.\n\nNote that by default, `a/**/b` will **not** match `a/.d/b`, unless `dot`\nis set.\n\n### noext\n\nDisable "extglob" style patterns like `+(a|b)`.\n\n### nocase\n\nPerform a case-insensitive match.\n\n### nonull\n\nWhen a match is not found by `minimatch.match`, return a list containing\nthe pattern itself if this option is set.  When not set, an empty list\nis returned if there are no matches.\n\n### matchBase\n\nIf set, then patterns without slashes will be matched\nagainst the basename of the path if it contains slashes.  For example,\n`a?b` would match the path `/xyz/123/acb`, but not `/xyz/acb/123`.\n\n### nocomment\n\nSuppress the behavior of treating `#` at the start of a pattern as a\ncomment.\n\n### nonegate\n\nSuppress the behavior of treating a leading `!` character as negation.\n\n### flipNegate\n\nReturns from negate expressions the same as if they were not negated.\n(Ie, true on a hit, false on a miss.)\n\n\n## Comparisons to other fnmatch/glob implementations\n\nWhile strict compliance with the existing standards is a worthwhile\ngoal, some discrepancies exist between minimatch and other\nimplementations, and are intentional.\n\nIf the pattern starts with a `!` character, then it is negated.  Set the\n`nonegate` flag to suppress this behavior, and treat leading `!`\ncharacters normally.  This is perhaps relevant if you wish to start the\npattern with a negative extglob pattern like `!(a|B)`.  Multiple `!`\ncharacters at the start of a pattern will negate the pattern multiple\ntimes.\n\nIf a pattern starts with `#`, then it is treated as a comment, and\nwill not match anything.  Use `\\#` to match a literal `#` at the\nstart of a line, or set the `nocomment` flag to suppress this behavior.\n\nThe double-star character `**` is supported by default, unless the\n`noglobstar` flag is set.  This is supported in the manner of bsdglob\nand bash 4.1, where `**` only has special significance if it is the only\nthing in a path part.  That is, `a/**/b` will match `a/x/y/b`, but\n`a/**b` will not.\n\nIf an escaped pattern has no matches, and the `nonull` flag is set,\nthen minimatch.match returns the pattern as-provided, rather than\ninterpreting the character escapes.  For example,\n`minimatch.match([], "\\\\*a\\\\?")` will return `"\\\\*a\\\\?"` rather than\n`"*a?"`.  This is akin to setting the `nullglob` option in bash, except\nthat it does not resolve escaped pattern characters.\n\nIf brace expansion is not disabled, then it is performed before any\nother interpretation of the glob pattern.  Thus, a pattern like\n`+(a|{b),c)}`, which would not be valid in bash or zsh, is expanded\n**first** into the set of `+(a|b)` and `+(a|c)`, and those patterns are\nchecked for validity.  Since those two are valid, matching proceeds.\n',
+527 silly resolved     readmeFilename: 'README.md',
+527 silly resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+527 silly resolved     _id: 'minimatch@0.3.0',
+527 silly resolved     _from: 'minimatch@0.3' } ]
+528 info install inherits@2.0.1 into /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+529 info install minimatch@0.3.0 into /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+530 info installOne inherits@2.0.1
+531 info installOne minimatch@0.3.0
+532 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/inherits unbuild
+533 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch unbuild
+534 verbose tar unpack /home/duhame_j/.npm/inherits/2.0.1/package.tgz
+535 silly lockFile f831bace-dules-glob-node-modules-inherits tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/inherits
+536 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/inherits /home/duhame_j/.npm/f831bace-dules-glob-node-modules-inherits.lock
+537 silly lockFile 55822c93-j-npm-inherits-2-0-1-package-tgz tar:///home/duhame_j/.npm/inherits/2.0.1/package.tgz
+538 verbose lock tar:///home/duhame_j/.npm/inherits/2.0.1/package.tgz /home/duhame_j/.npm/55822c93-j-npm-inherits-2-0-1-package-tgz.lock
+539 verbose tar unpack /home/duhame_j/.npm/minimatch/0.3.0/package.tgz
+540 silly lockFile da9e9227-ules-glob-node-modules-minimatch tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch
+541 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch /home/duhame_j/.npm/da9e9227-ules-glob-node-modules-minimatch.lock
+542 silly lockFile 6530e225--npm-minimatch-0-3-0-package-tgz tar:///home/duhame_j/.npm/minimatch/0.3.0/package.tgz
+543 verbose lock tar:///home/duhame_j/.npm/minimatch/0.3.0/package.tgz /home/duhame_j/.npm/6530e225--npm-minimatch-0-3-0-package-tgz.lock
+544 silly gunzTarPerm modes [ '755', '644' ]
+545 silly gunzTarPerm modes [ '755', '644' ]
+546 silly gunzTarPerm extractEntry package.json
+547 silly gunzTarPerm extractEntry .npmignore
+548 silly gunzTarPerm extractEntry README.md
+549 silly gunzTarPerm extractEntry LICENSE
+550 silly gunzTarPerm extractEntry minimatch.js
+551 silly gunzTarPerm extractEntry test/basic.js
+552 silly gunzTarPerm extractEntry test/brace-expand.js
+553 silly gunzTarPerm extractEntry test/caching.js
+554 silly gunzTarPerm extractEntry package.json
+555 silly gunzTarPerm extractEntry test/defaults.js
+556 silly gunzTarPerm extractEntry test/extglob-ending-with-state-char.js
+557 silly gunzTarPerm extractEntry README.md
+558 silly gunzTarPerm extractEntry LICENSE
+559 silly gunzTarPerm extractEntry inherits.js
+560 silly gunzTarPerm extractEntry inherits_browser.js
+561 silly gunzTarPerm extractEntry test.js
+562 silly lockFile f831bace-dules-glob-node-modules-inherits tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/inherits
+563 silly lockFile f831bace-dules-glob-node-modules-inherits tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/inherits
+564 silly lockFile 55822c93-j-npm-inherits-2-0-1-package-tgz tar:///home/duhame_j/.npm/inherits/2.0.1/package.tgz
+565 silly lockFile 55822c93-j-npm-inherits-2-0-1-package-tgz tar:///home/duhame_j/.npm/inherits/2.0.1/package.tgz
+566 info preinstall inherits@2.0.1
+567 verbose readDependencies using package.json deps
+568 verbose readDependencies using package.json deps
+569 silly resolved []
+570 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/inherits
+571 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/inherits
+572 verbose linkStuff [ true,
+572 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+572 verbose linkStuff   false,
+572 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules' ]
+573 info linkStuff inherits@2.0.1
+574 verbose linkBins inherits@2.0.1
+575 verbose linkMans inherits@2.0.1
+576 verbose rebuildBundles inherits@2.0.1
+577 info install inherits@2.0.1
+578 info postinstall inherits@2.0.1
+579 silly lockFile da9e9227-ules-glob-node-modules-minimatch tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch
+580 silly lockFile da9e9227-ules-glob-node-modules-minimatch tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch
+581 silly lockFile 6530e225--npm-minimatch-0-3-0-package-tgz tar:///home/duhame_j/.npm/minimatch/0.3.0/package.tgz
+582 silly lockFile 6530e225--npm-minimatch-0-3-0-package-tgz tar:///home/duhame_j/.npm/minimatch/0.3.0/package.tgz
+583 info preinstall minimatch@0.3.0
+584 verbose readDependencies using package.json deps
+585 verbose readDependencies using package.json deps
+586 verbose cache add [ 'lru-cache@2', null ]
+587 verbose cache add name=undefined spec="lru-cache@2" args=["lru-cache@2",null]
+588 verbose parsed url { protocol: null,
+588 verbose parsed url   slashes: null,
+588 verbose parsed url   auth: null,
+588 verbose parsed url   host: null,
+588 verbose parsed url   port: null,
+588 verbose parsed url   hostname: null,
+588 verbose parsed url   hash: null,
+588 verbose parsed url   search: null,
+588 verbose parsed url   query: null,
+588 verbose parsed url   pathname: 'lru-cache@2',
+588 verbose parsed url   path: 'lru-cache@2',
+588 verbose parsed url   href: 'lru-cache@2' }
+589 verbose cache add name="lru-cache" spec="2" args=["lru-cache","2"]
+590 verbose parsed url { protocol: null,
+590 verbose parsed url   slashes: null,
+590 verbose parsed url   auth: null,
+590 verbose parsed url   host: null,
+590 verbose parsed url   port: null,
+590 verbose parsed url   hostname: null,
+590 verbose parsed url   hash: null,
+590 verbose parsed url   search: null,
+590 verbose parsed url   query: null,
+590 verbose parsed url   pathname: '2',
+590 verbose parsed url   path: '2',
+590 verbose parsed url   href: '2' }
+591 verbose addNamed [ 'lru-cache', '2' ]
+592 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+593 silly lockFile b4f9d1ff-lru-cache-2 lru-cache@2
+594 verbose lock lru-cache@2 /home/duhame_j/.npm/b4f9d1ff-lru-cache-2.lock
+595 verbose cache add [ 'sigmund@~1.0.0', null ]
+596 verbose cache add name=undefined spec="sigmund@~1.0.0" args=["sigmund@~1.0.0",null]
+597 verbose parsed url { protocol: null,
+597 verbose parsed url   slashes: null,
+597 verbose parsed url   auth: null,
+597 verbose parsed url   host: null,
+597 verbose parsed url   port: null,
+597 verbose parsed url   hostname: null,
+597 verbose parsed url   hash: null,
+597 verbose parsed url   search: null,
+597 verbose parsed url   query: null,
+597 verbose parsed url   pathname: 'sigmund@~1.0.0',
+597 verbose parsed url   path: 'sigmund@~1.0.0',
+597 verbose parsed url   href: 'sigmund@~1.0.0' }
+598 verbose cache add name="sigmund" spec="~1.0.0" args=["sigmund","~1.0.0"]
+599 verbose parsed url { protocol: null,
+599 verbose parsed url   slashes: null,
+599 verbose parsed url   auth: null,
+599 verbose parsed url   host: null,
+599 verbose parsed url   port: null,
+599 verbose parsed url   hostname: null,
+599 verbose parsed url   hash: null,
+599 verbose parsed url   search: null,
+599 verbose parsed url   query: null,
+599 verbose parsed url   pathname: '~1.0.0',
+599 verbose parsed url   path: '~1.0.0',
+599 verbose parsed url   href: '~1.0.0' }
+600 verbose addNamed [ 'sigmund', '~1.0.0' ]
+601 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+602 silly lockFile 584a4a05-sigmund-1-0-0 sigmund@~1.0.0
+603 verbose lock sigmund@~1.0.0 /home/duhame_j/.npm/584a4a05-sigmund-1-0-0.lock
+604 silly addNameRange { name: 'lru-cache',
+604 silly addNameRange   range: '>=2.0.0-0 <3.0.0-0',
+604 silly addNameRange   hasData: false }
+605 silly addNameRange { name: 'sigmund', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+606 verbose url raw sigmund
+607 verbose url resolving [ 'https://registry.npmjs.org/', './sigmund' ]
+608 verbose url resolved https://registry.npmjs.org/sigmund
+609 info trying registry request attempt 1 at 14:08:11
+610 verbose etag "B3EEO8J1FLHOF1JE91VSLO7DE"
+611 http GET https://registry.npmjs.org/sigmund
+612 verbose url raw lru-cache
+613 verbose url resolving [ 'https://registry.npmjs.org/', './lru-cache' ]
+614 verbose url resolved https://registry.npmjs.org/lru-cache
+615 info trying registry request attempt 1 at 14:08:12
+616 verbose etag "2G1YTNM1IESQQK5RA03Z2XDWV"
+617 http GET https://registry.npmjs.org/lru-cache
+618 http 304 https://registry.npmjs.org/sigmund
+619 silly registry.get cb [ 304,
+619 silly registry.get   { date: 'Fri, 31 Oct 2014 13:08:14 GMT',
+619 silly registry.get     server: 'Apache',
+619 silly registry.get     via: '1.1 varnish',
+619 silly registry.get     'last-modified': 'Fri, 31 Oct 2014 13:08:10 GMT',
+619 silly registry.get     'cache-control': 'max-age=60',
+619 silly registry.get     etag: '"B3EEO8J1FLHOF1JE91VSLO7DE"',
+619 silly registry.get     age: '17',
+619 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+619 silly registry.get     'x-cache': 'HIT',
+619 silly registry.get     'x-cache-hits': '2',
+619 silly registry.get     'x-timer': 'S1414760894.988616,VS0,VE0',
+619 silly registry.get     vary: 'Accept',
+619 silly registry.get     'content-length': '0',
+619 silly registry.get     'keep-alive': 'timeout=10, max=50',
+619 silly registry.get     connection: 'Keep-Alive' } ]
+620 verbose etag sigmund from cache
+621 silly addNameRange number 2 { name: 'sigmund', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+622 silly addNameRange versions [ 'sigmund', [ '1.0.0' ] ]
+623 verbose addNamed [ 'sigmund', '1.0.0' ]
+624 verbose addNamed [ '1.0.0', '1.0.0' ]
+625 silly lockFile 7b2d1244-sigmund-1-0-0 sigmund@1.0.0
+626 verbose lock sigmund@1.0.0 /home/duhame_j/.npm/7b2d1244-sigmund-1-0-0.lock
+627 silly lockFile 7b2d1244-sigmund-1-0-0 sigmund@1.0.0
+628 silly lockFile 7b2d1244-sigmund-1-0-0 sigmund@1.0.0
+629 silly lockFile 584a4a05-sigmund-1-0-0 sigmund@~1.0.0
+630 silly lockFile 584a4a05-sigmund-1-0-0 sigmund@~1.0.0
+631 http 200 https://registry.npmjs.org/lru-cache
+632 silly registry.get cb [ 200,
+632 silly registry.get   { date: 'Fri, 31 Oct 2014 13:08:18 GMT',
+632 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+632 silly registry.get     etag: '"1VSK41HVSZJ8OYGXQ19TOBA6K"',
+632 silly registry.get     'content-type': 'application/json',
+632 silly registry.get     'cache-control': 'max-age=60',
+632 silly registry.get     'content-length': '26512',
+632 silly registry.get     'accept-ranges': 'bytes',
+632 silly registry.get     via: '1.1 varnish',
+632 silly registry.get     age: '42',
+632 silly registry.get     'x-served-by': 'cache-lcy1130-LCY',
+632 silly registry.get     'x-cache': 'HIT',
+632 silly registry.get     'x-cache-hits': '3',
+632 silly registry.get     'x-timer': 'S1414760898.338897,VS0,VE0',
+632 silly registry.get     vary: 'Accept',
+632 silly registry.get     'keep-alive': 'timeout=10, max=50',
+632 silly registry.get     connection: 'Keep-Alive' } ]
+633 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+634 silly addNameRange versions [ 'lru-cache',
+634 silly addNameRange   [ '1.0.1',
+634 silly addNameRange     '1.0.2',
+634 silly addNameRange     '1.0.3',
+634 silly addNameRange     '1.0.4',
+634 silly addNameRange     '1.0.5',
+634 silly addNameRange     '1.0.6',
+634 silly addNameRange     '1.1.0',
+634 silly addNameRange     '1.1.1',
+634 silly addNameRange     '2.0.0',
+634 silly addNameRange     '2.0.1',
+634 silly addNameRange     '2.0.2',
+634 silly addNameRange     '2.0.3',
+634 silly addNameRange     '2.0.4',
+634 silly addNameRange     '2.1.0',
+634 silly addNameRange     '2.2.0',
+634 silly addNameRange     '2.2.1',
+634 silly addNameRange     '2.2.2',
+634 silly addNameRange     '2.2.4',
+634 silly addNameRange     '2.3.0',
+634 silly addNameRange     '2.3.1',
+634 silly addNameRange     '2.5.0' ] ]
+635 verbose addNamed [ 'lru-cache', '2.5.0' ]
+636 verbose addNamed [ '2.5.0', '2.5.0' ]
+637 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+638 verbose lock lru-cache@2.5.0 /home/duhame_j/.npm/30aa630e-lru-cache-2-5-0.lock
+639 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+640 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+641 silly lockFile b4f9d1ff-lru-cache-2 lru-cache@2
+642 silly lockFile b4f9d1ff-lru-cache-2 lru-cache@2
+643 silly resolved [ { name: 'sigmund',
+643 silly resolved     version: '1.0.0',
+643 silly resolved     description: 'Quick and dirty signatures for Objects.',
+643 silly resolved     main: 'sigmund.js',
+643 silly resolved     directories: { test: 'test' },
+643 silly resolved     dependencies: {},
+643 silly resolved     devDependencies: { tap: '~0.3.0' },
+643 silly resolved     scripts: { test: 'tap test/*.js', bench: 'node bench.js' },
+643 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sigmund' },
+643 silly resolved     keywords: [ 'object', 'signature', 'key', 'data', 'psychoanalysis' ],
+643 silly resolved     author:
+643 silly resolved      { name: 'Isaac Z. Schlueter',
+643 silly resolved        email: 'i@izs.me',
+643 silly resolved        url: 'http://blog.izs.me/' },
+643 silly resolved     license: 'BSD',
+643 silly resolved     readme: '# sigmund\n\nQuick and dirty signatures for Objects.\n\nThis is like a much faster `deepEquals` comparison, which returns a\nstring key suitable for caches and the like.\n\n## Usage\n\n```javascript\nfunction doSomething (someObj) {\n  var key = sigmund(someObj, maxDepth) // max depth defaults to 10\n  var cached = cache.get(key)\n  if (cached) return cached)\n\n  var result = expensiveCalculation(someObj)\n  cache.set(key, result)\n  return result\n}\n```\n\nThe resulting key will be as unique and reproducible as calling\n`JSON.stringify` or `util.inspect` on the object, but is much faster.\nIn order to achieve this speed, some differences are glossed over.\nFor example, the object `{0:\'foo\'}` will be treated identically to the\narray `[\'foo\']`.\n\nAlso, just as there is no way to summon the soul from the scribblings\nof a cocain-addled psychoanalyst, there is no way to revive the object\nfrom the signature string that sigmund gives you.  In fact, it\'s\nbarely even readable.\n\nAs with `sys.inspect` and `JSON.stringify`, larger objects will\nproduce larger signature strings.\n\nBecause sigmund is a bit less strict than the more thorough\nalternatives, the strings will be shorter, and also there is a\nslightly higher chance for collisions.  For example, these objects\nhave the same signature:\n\n    var obj1 = {a:\'b\',c:/def/,g:[\'h\',\'i\',{j:\'\',k:\'l\'}]}\n    var obj2 = {a:\'b\',c:\'/def/\',g:[\'h\',\'i\',\'{jkl\']}\n\nLike a good Freudian, sigmund is most effective when you already have\nsome understanding of what you\'re looking for.  It can help you help\nyourself, but you must be willing to do some work as well.\n\nCycles are handled, and cyclical objects are silently omitted (though\nthe key is included in the signature output.)\n\nThe second argument is the maximum depth, which defaults to 10,\nbecause that is the maximum object traversal depth covered by most\ninsurance carriers.\n',
+643 silly resolved     readmeFilename: 'README.md',
+643 silly resolved     bugs: { url: 'https://github.com/isaacs/sigmund/issues' },
+643 silly resolved     _id: 'sigmund@1.0.0',
+643 silly resolved     _from: 'sigmund@~1.0.0' },
+643 silly resolved   { name: 'lru-cache',
+643 silly resolved     description: 'A cache object that deletes the least-recently-used items.',
+643 silly resolved     version: '2.5.0',
+643 silly resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+643 silly resolved     scripts: { test: 'tap test --gc' },
+643 silly resolved     main: 'lib/lru-cache.js',
+643 silly resolved     repository:
+643 silly resolved      { type: 'git',
+643 silly resolved        url: 'git://github.com/isaacs/node-lru-cache.git' },
+643 silly resolved     devDependencies: { tap: '', weak: '' },
+643 silly resolved     license:
+643 silly resolved      { type: 'MIT',
+643 silly resolved        url: 'http://github.com/isaacs/node-lru-cache/raw/master/LICENSE' },
+643 silly resolved     readme: '# lru cache\n\nA cache object that deletes the least-recently-used items.\n\n## Usage:\n\n```javascript\nvar LRU = require("lru-cache")\n  , options = { max: 500\n              , length: function (n) { return n * 2 }\n              , dispose: function (key, n) { n.close() }\n              , maxAge: 1000 * 60 * 60 }\n  , cache = LRU(options)\n  , otherCache = LRU(50) // sets just the max size\n\ncache.set("key", "value")\ncache.get("key") // "value"\n\ncache.reset()    // empty the cache\n```\n\nIf you put more stuff in it, then items will fall out.\n\nIf you try to put an oversized thing in it, then it\'ll fall out right\naway.\n\n## Options\n\n* `max` The maximum size of the cache, checked by applying the length\n  function to all values in the cache.  Not setting this is kind of\n  silly, since that\'s the whole purpose of this lib, but it defaults\n  to `Infinity`.\n* `maxAge` Maximum age in ms.  Items are not pro-actively pruned out\n  as they age, but if you try to get an item that is too old, it\'ll\n  drop it and return undefined instead of giving it to you.\n* `length` Function that is used to calculate the length of stored\n  items.  If you\'re storing strings or buffers, then you probably want\n  to do something like `function(n){return n.length}`.  The default is\n  `function(n){return 1}`, which is fine if you want to store `n`\n  like-sized things.\n* `dispose` Function that is called on items when they are dropped\n  from the cache.  This can be handy if you want to close file\n  descriptors or do other cleanup tasks when items are no longer\n  accessible.  Called with `key, value`.  It\'s called *before*\n  actually removing the item from the internal cache, so if you want\n  to immediately put it back in, you\'ll have to do that in a\n  `nextTick` or `setTimeout` callback or it won\'t do anything.\n* `stale` By default, if you set a `maxAge`, it\'ll only actually pull\n  stale items out of the cache when you `get(key)`.  (That is, it\'s\n  not pre-emptively doing a `setTimeout` or anything.)  If you set\n  `stale:true`, it\'ll return the stale value before deleting it.  If\n  you don\'t set this, then it\'ll return `undefined` when you try to\n  get a stale entry, as if it had already been deleted.\n\n## API\n\n* `set(key, value)`\n* `get(key) => value`\n\n    Both of these will update the "recently used"-ness of the key.\n    They do what you think.\n\n* `peek(key)`\n\n    Returns the key value (or `undefined` if not found) without\n    updating the "recently used"-ness of the key.\n\n    (If you find yourself using this a lot, you *might* be using the\n    wrong sort of data structure, but there are some use cases where\n    it\'s handy.)\n\n* `del(key)`\n\n    Deletes a key out of the cache.\n\n* `reset()`\n\n    Clear the cache entirely, throwing away all values.\n\n* `has(key)`\n\n    Check if a key is in the cache, without updating the recent-ness\n    or deleting it for being stale.\n\n* `forEach(function(value,key,cache), [thisp])`\n\n    Just like `Array.prototype.forEach`.  Iterates over all the keys\n    in the cache, in order of recent-ness.  (Ie, more recently used\n    items are iterated over first.)\n\n* `keys()`\n\n    Return an array of the keys in the cache.\n\n* `values()`\n\n    Return an array of the values in the cache.\n',
+643 silly resolved     readmeFilename: 'README.md',
+643 silly resolved     bugs: { url: 'https://github.com/isaacs/node-lru-cache/issues' },
+643 silly resolved     _id: 'lru-cache@2.5.0',
+643 silly resolved     _from: 'lru-cache@2' } ]
+644 info install sigmund@1.0.0 into /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch
+645 info install lru-cache@2.5.0 into /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch
+646 info installOne sigmund@1.0.0
+647 info installOne lru-cache@2.5.0
+648 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund unbuild
+649 info /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache unbuild
+650 verbose tar unpack /home/duhame_j/.npm/sigmund/1.0.0/package.tgz
+651 silly lockFile e0c4b206-s-minimatch-node-modules-sigmund tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+652 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund /home/duhame_j/.npm/e0c4b206-s-minimatch-node-modules-sigmund.lock
+653 silly lockFile fb07eb49--j-npm-sigmund-1-0-0-package-tgz tar:///home/duhame_j/.npm/sigmund/1.0.0/package.tgz
+654 verbose lock tar:///home/duhame_j/.npm/sigmund/1.0.0/package.tgz /home/duhame_j/.npm/fb07eb49--j-npm-sigmund-1-0-0-package-tgz.lock
+655 verbose tar unpack /home/duhame_j/.npm/lru-cache/2.5.0/package.tgz
+656 silly lockFile afca662f-minimatch-node-modules-lru-cache tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+657 verbose lock tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache /home/duhame_j/.npm/afca662f-minimatch-node-modules-lru-cache.lock
+658 silly lockFile 95a09b06--npm-lru-cache-2-5-0-package-tgz tar:///home/duhame_j/.npm/lru-cache/2.5.0/package.tgz
+659 verbose lock tar:///home/duhame_j/.npm/lru-cache/2.5.0/package.tgz /home/duhame_j/.npm/95a09b06--npm-lru-cache-2-5-0-package-tgz.lock
+660 silly gunzTarPerm modes [ '755', '644' ]
+661 silly gunzTarPerm modes [ '755', '644' ]
+662 silly gunzTarPerm extractEntry package.json
+663 silly gunzTarPerm extractEntry README.md
+664 silly gunzTarPerm extractEntry LICENSE
+665 silly gunzTarPerm extractEntry bench.js
+666 silly gunzTarPerm extractEntry sigmund.js
+667 silly gunzTarPerm extractEntry test/basic.js
+668 silly gunzTarPerm extractEntry package.json
+669 silly gunzTarPerm extractEntry .npmignore
+670 silly gunzTarPerm extractEntry README.md
+671 silly gunzTarPerm extractEntry LICENSE
+672 silly gunzTarPerm extractEntry CONTRIBUTORS
+673 silly lockFile e0c4b206-s-minimatch-node-modules-sigmund tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+674 silly lockFile e0c4b206-s-minimatch-node-modules-sigmund tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+675 silly lockFile fb07eb49--j-npm-sigmund-1-0-0-package-tgz tar:///home/duhame_j/.npm/sigmund/1.0.0/package.tgz
+676 silly lockFile fb07eb49--j-npm-sigmund-1-0-0-package-tgz tar:///home/duhame_j/.npm/sigmund/1.0.0/package.tgz
+677 silly gunzTarPerm extractEntry lib/lru-cache.js
+678 silly gunzTarPerm extractEntry test/basic.js
+679 silly gunzTarPerm extractEntry test/foreach.js
+680 silly gunzTarPerm extractEntry test/memory-leak.js
+681 info preinstall sigmund@1.0.0
+682 verbose readDependencies using package.json deps
+683 verbose readDependencies using package.json deps
+684 silly resolved []
+685 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+686 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+687 verbose linkStuff [ true,
+687 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+687 verbose linkStuff   false,
+687 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules' ]
+688 info linkStuff sigmund@1.0.0
+689 verbose linkBins sigmund@1.0.0
+690 verbose linkMans sigmund@1.0.0
+691 verbose rebuildBundles sigmund@1.0.0
+692 info install sigmund@1.0.0
+693 info postinstall sigmund@1.0.0
+694 silly lockFile afca662f-minimatch-node-modules-lru-cache tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+695 silly lockFile afca662f-minimatch-node-modules-lru-cache tar:///home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+696 silly lockFile 95a09b06--npm-lru-cache-2-5-0-package-tgz tar:///home/duhame_j/.npm/lru-cache/2.5.0/package.tgz
+697 silly lockFile 95a09b06--npm-lru-cache-2-5-0-package-tgz tar:///home/duhame_j/.npm/lru-cache/2.5.0/package.tgz
+698 info preinstall lru-cache@2.5.0
+699 verbose readDependencies using package.json deps
+700 verbose readDependencies using package.json deps
+701 silly resolved []
+702 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+703 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+704 verbose linkStuff [ true,
+704 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+704 verbose linkStuff   false,
+704 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules' ]
+705 info linkStuff lru-cache@2.5.0
+706 verbose linkBins lru-cache@2.5.0
+707 verbose linkMans lru-cache@2.5.0
+708 verbose rebuildBundles lru-cache@2.5.0
+709 info install lru-cache@2.5.0
+710 info postinstall lru-cache@2.5.0
+711 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch
+712 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch
+713 verbose linkStuff [ true,
+713 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+713 verbose linkStuff   false,
+713 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules' ]
+714 info linkStuff minimatch@0.3.0
+715 verbose linkBins minimatch@0.3.0
+716 verbose linkMans minimatch@0.3.0
+717 verbose rebuildBundles minimatch@0.3.0
+718 verbose rebuildBundles [ 'lru-cache', 'sigmund' ]
+719 info install minimatch@0.3.0
+720 info postinstall minimatch@0.3.0
+721 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+722 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+723 verbose linkStuff [ true,
+723 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+723 verbose linkStuff   false,
+723 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync/node_modules' ]
+724 info linkStuff glob@3.2.11
+725 verbose linkBins glob@3.2.11
+726 verbose linkMans glob@3.2.11
+727 verbose rebuildBundles glob@3.2.11
+728 verbose rebuildBundles [ 'inherits', 'minimatch' ]
+729 info install glob@3.2.11
+730 info postinstall glob@3.2.11
+731 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync
+732 info build /home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules/findup-sync
+733 verbose linkStuff [ true,
+733 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+733 verbose linkStuff   false,
+733 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules/grunt-cli/node_modules' ]
+734 info linkStuff findup-sync@0.1.3
+735 verbose linkBins findup-sync@0.1.3
+736 verbose linkMans findup-sync@0.1.3
+737 verbose rebuildBundles findup-sync@0.1.3
+738 verbose rebuildBundles [ 'glob', 'lodash' ]
+739 info install findup-sync@0.1.3
+740 info postinstall findup-sync@0.1.3
+741 verbose about to build /home/duhame_j/npm/lib/node_modules/grunt-cli
+742 info build /home/duhame_j/npm/lib/node_modules/grunt-cli
+743 verbose linkStuff [ true,
+743 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules',
+743 verbose linkStuff   true,
+743 verbose linkStuff   '/home/duhame_j/npm/lib/node_modules' ]
+744 info linkStuff grunt-cli@0.1.13
+745 verbose linkBins grunt-cli@0.1.13
+746 verbose link bins [ { grunt: 'bin/grunt' }, '/home/duhame_j/npm/bin', true ]
+747 verbose linkMans grunt-cli@0.1.13
+748 verbose rebuildBundles grunt-cli@0.1.13
+749 verbose rebuildBundles [ '.bin', 'findup-sync', 'nopt', 'resolve' ]
+750 info install grunt-cli@0.1.13
+751 info postinstall grunt-cli@0.1.13
+752 error peerinvalid The package yo does not satisfy its siblings' peerDependencies requirements!
+752 error peerinvalid Peer generator-angular@0.9.8 wants yo@>=1.0.0
+752 error peerinvalid Peer generator-karma@0.8.3 wants yo@>=1.0.0
+752 error peerinvalid Peer generator-mocha@0.1.6 wants yo@>=1.0.0
+752 error peerinvalid Peer generator-webapp@0.5.1 wants yo@>=1.2.0
+753 error System Linux 3.13.0-24-generic
+754 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "grunt-cli"
+755 error cwd /home/duhame_j/Project/e-commerce
+756 error node -v v0.10.25
+757 error npm -v 1.3.10
+758 error code EPEERINVALID
+759 verbose exit [ 1, true ]

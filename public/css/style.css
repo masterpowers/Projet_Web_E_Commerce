@@ -1,0 +1,38 @@
+body { padding-top: 50px; background-color: #FFF;}
+#footer {
+	height: 60px;
+	background-image: linear-gradient(to bottom, #3C3C3C 0px, #222 100%);
+	background-repeat: repeat-x;
+	margin-top:50px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.index-body { min-height: 799px; border: 1px solid green; }
+.title-href { padding: 0; margin-right: 25px; }
+
+.form
+{
+	color:#262626;
+}
+
+.form h2
+{
+	text-align: center;
+}
+
+.submit
+{
+	margin-top:20px;
+}
+.products {
+	margin-top: 20px;
+}
+.basket td {
+	vertical-align: middle !important;
+}
+.categories{
+	color: #000;
+}
+.basket .quantity input {
+	width: 50px;
+}
