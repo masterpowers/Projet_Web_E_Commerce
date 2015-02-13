@@ -1,0 +1,56 @@
+JONAS
+	- Database
+		(oublie pas les barèmes de frais de port en fonction du poids, du pays de livraison, du mode d’expédition)
+		categories, sous categories, produits, clients, abonnements, promotions , rabais-client...
+
+	- Design général :
+		HomePage (menu + slider + les derniers produits + les dernieres promos)
+		Catalogue (catégories, sous catégories, retour facile, produits, description, photo, caractéristiques, prix, etc)
+		Page Produit (fiche détaillée)
+
+	- Produit :
+		- Une fiche détaillée permet de mettre en valeur chaque produit. Entièrement
+		 paramétrable, cette fiche autorise l’affichage d’une grande quantité de textes et
+		 supporte les éléments multimédias tels que vidéos, images panoramiques 360 °, etc..
+		- Des articles peuvent être déclinés en plusieurs couleurs ou tailles ou n’importe quel
+		 autre critère. Un prix différent peut être défini pour chaque variante du même article
+
+
+MARTIN
+	- Authentification utilisateur + Accès Admin
+
+	- Interface de gestion personnelle du compte client.
+		 Suivi de l’état de ses commandes avec références, date, détails et statut de traitement.
+			(Un bouton "Suivre mes commades" sur l'interface client)
+
+	- Validation d’une commande par simple identification du client (évite les longs formulaires à remplir).
+			-Pouvoir commander en tant qu’utilisateur connu et enregistré, avec listes d’adresses
+			 perso de livraison/facturation
+			-Pouvoir commander en tant qu’invité sans créer de compte
+				Au moment de valider la commande, le choix se présente :
+			-S'identifier pour utiliser ses infos user
+			-Remplir un formulaire rapide pour commander en tant que visiteur
+			-Possibilité de cocher 'Emballage cadeau'
+			- Calcul des frais de port en fonction du poids, du pays de livraison, du mode d’expédition
+	          ou selon un forfait. (BAREMES FIXES en , CHOIX A FAIRE POUR LE CLIENT)
+
+
+ROBIN
+	- Un système de recherche avancée avec plusieurs niveaux de catégories (catégories / sous
+	catégories) et recherche par texte dans descriptif, nom, catégorie.
+
+	- La possibilité de mettre des articles dans un panier ou un caddie.
+
+	- Etat du caddie affiché sur toutes les pages (liste des produits, quantité, prix, total)
+
+	- Caddie sophistiqué, avec fonctions de modification des quantités, suppression d’articles,
+	 affichage du montant de la commande. En plus des rabais sur des produits, le caddie
+	 peut prendre en compte des rabais client.
+
+	 PANEL ADMIN
+		- Affichage des informations relatives à l’état des commandes de la boutique sur la page de garde.
+		- Ajout, modification et suppression d’articles en quelques secondes, avec possibilité de traitement par lot.
+		- Gestion du statut des articles. Cette fonction permet de définir le comportement des articles dans le catalogue.
+		- Selon les besoins, un article peut être déclaré en promotion, nouveauté, etc.
+		- Gestion de stocks, des commandes à faire, des fournisseurs...
+		- Gestion des catégories, avec possibilité d’ajout de catégories.
