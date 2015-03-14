@@ -16,10 +16,13 @@ Route::get('users/login', 'UsersController@getLogin');
 Route::post('users/login','UsersController@postLogin');
 
 Route::get('logout','UsersController@getLogout');
-Route::get('users/profile','UsersController@getProfile');
 Route::get('index','UsersController@index');
 Route::get('admin/index','UsersController@getAdmin');
 Route::resource('users','UsersController');
+
+Route::group(['before' => 'auth'], function(){
+  Route::get('account', array('uses' => 'UsersController@showAccount'));
+});
 
 Route::any("category/index", [
   "as"   => "category/index",

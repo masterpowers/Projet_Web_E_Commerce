@@ -118,11 +118,17 @@ class UsersController extends BaseController {
 
     public function show($id)
     {
-        /*$user = User::findOrFail($id);
+        $user = User::findOrFail($id);
 
-        return View::make('users.show', compact('user'));*/
+        return View::make('users.show')->with('user', $user);
     }
 
+    public function showAccount(){
+        $userid = Auth::user()->id;
+        $user = User::where('id', '=', Auth::user()->id)->get();
+        
+        return View::make('users.account')->with('user', $user);
+    }
     /**
     * Show the form for editing the specified user.
     *
@@ -132,6 +138,7 @@ class UsersController extends BaseController {
     public function edit($id)
     {
         $user = User::findOrFail($id);
+
         return View::make('users.update')->with('user', $user);
     }
 

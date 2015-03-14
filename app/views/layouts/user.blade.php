@@ -18,17 +18,20 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Home</a></li>
+						<li><a href="/">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
+						@if(Auth::check())
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->username }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href=""></a></li>
 								<li class="divider"></li>
-								<li><a href="">Logout</a></li>
+								<li><a href="/account">Account</a></li>
+								<li><a href="/logout">Logout</a></li>
 							</ul>
 						</li>
+						@endif
 					</ul>
 				</div>
 			</div>
