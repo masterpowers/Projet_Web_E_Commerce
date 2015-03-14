@@ -4,12 +4,13 @@
 // App::bind("Formativ\Billing\DocumentInterface", "Formativ\Billing\PDFDocument");
 // App::bind("Formativ\Billing\MessengerInterface", "Formativ\Billing\EmailMessenger");
 
+$alphanum = '[A-Za-z]+';
 Route::get("/", ["as"   => "index/index","uses" => "IndexController@indexAction"]);
-
 Route::get('register/verify/{confirmationCode}', [ //email
     'as' => 'confirmation_path',
     'uses' => 'UsersController@confirm'
-])->where('confirmation_code', '[A-Za-z]+');
+])->where('confirmation_code', $alphanum);
+
 
 Route::get('users/login', 'UsersController@getLogin');
 Route::post('users/login','UsersController@postLogin');

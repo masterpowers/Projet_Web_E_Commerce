@@ -36,7 +36,6 @@ class UsersController extends BaseController {
         //{
         $password = htmlentities(Input::get('password'));
         $password = Hash::make($password);
-        $confirmation_code = str_random(30);
         $confirmed = 0;
         $role = 'User';
 
@@ -54,8 +53,8 @@ class UsersController extends BaseController {
         $user->adress1 = htmlentities(Input::get('adress1'));
         $user->adress2 = htmlentities(Input::get('adress2'));
         $user->role = $role;
+        $confirmation_code = str_random(30);
         $user->confirmation_code = $confirmation_code;
-        $user->confirmed = $confirmed;
         $user->save();
         Mail::send('users.mails.welcome' ,$user->toArray() , function($message){
             $message->to(Input::get('email'), Input::get('username').' '.Input::get('firstname'))->subject('Bienvenue sur Ecommerce');
@@ -69,11 +68,13 @@ class UsersController extends BaseController {
         if(!$confirmation_code){
             throw new Exception('Confirmation impossible ou non existante !');
         }
-        $user = DB::table('users')->where('confirmation_code', $confirmation_code)->first();
+        $user = User::where('confirmation_code', $confirmation_code)->first();
         if (!$user){
             throw new Exception('Confirmation impossible ou non existante !');
         }
-        DB::table('users')->increment('confirmed', 1);
+        $user->confirmed = 1;
+        $user->confirmation_code = NULL;
+        $user->save();
         return Redirect::to('users/login')
         ->with('message', 'Félicitation votre compte est activé !');
     }
@@ -106,7 +107,6 @@ class UsersController extends BaseController {
 
     public function getLogout()
     {
-        print_r(Auth::user());
         Auth::logout();
         return Redirect::to('users/login');
     }

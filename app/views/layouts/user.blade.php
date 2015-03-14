@@ -43,7 +43,11 @@
     <p class="alert alert-danger">{{ Session::get('error') }}</p>
     @endif
 </div>
-
+	@if(Auth::check())
+		<p style="margin-top: 40px;">
+			{{ Auth::user()->username }}
+		</p>
+	@endif
 <div class="container index-body">
 	@yield('content')
 </div>
