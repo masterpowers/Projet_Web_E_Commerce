@@ -126,7 +126,7 @@ class UsersController extends BaseController {
     public function showAccount(){
         $userid = Auth::user()->id;
         $user = User::where('id', '=', Auth::user()->id)->get();
-        
+
         return View::make('users.account')->with('user', $user);
     }
     /**
@@ -139,7 +139,7 @@ class UsersController extends BaseController {
     {
         $user = User::findOrFail($id);
 
-        return View::make('users.update')->with('user', $user);
+        return View::make('users.edit')->with('user', $user);
     }
 
     /**
@@ -212,7 +212,7 @@ class UsersController extends BaseController {
         }
 
         $user->save();
-        return Redirect::to('users/profile');
+        return Redirect::to('/account');
 
         /*else
         {
